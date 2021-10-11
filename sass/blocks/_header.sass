@@ -1,0 +1,38 @@
+.header
+  padding: 15px 0
+  background-color: #262D33
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-logo
+    display: flex
+    align-items: center
+    &__img
+      margin-right: 6px
+    &__text
+      margin-top: 8px
+  &-nav
+    margin: 0
+    padding: 0
+    display: flex
+    list-style: none
+    &__item:not(:last-child)
+      margin-right: 30px
+    &__link
+      text-decoration: none
+      font-style: normal
+      font-size: 14px
+      line-height: 20px
+      color: $light
+  &__request-btn
+    width: 261px
+    padding: 9px 0 10px 0
+    font-family: "Lato-Regular", sans-serif
+    font-size: 14px
+    line-height: 20px
+    color: $light
+    text-transform: uppercase
+    background: #656B70
+    border-radius: 10px
+    border: none
