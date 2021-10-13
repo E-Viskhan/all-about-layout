@@ -342,28 +342,28 @@ template {
 }
 
 @font-face {
-  font-family: 'Lato-Regular', sans-serif;
+  font-family: 'Lato-Regular';
   src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Lato-Heavy', sans-serif;
+  font-family: 'Lato-Heavy';
   src: url("../fonts/Lato-Heavy.woff") format("woff"), url("../fonts/Lato-Heavy.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Lato-HeavyItalic', sans-serif;
+  font-family: 'Lato-HeavyItalic';
   src: url("../fonts/Lato-HeavyItalic.woff") format("woff"), url("../fonts/Lato-HeavyItalic.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Lato-Black', sans-serif;
+  font-family: 'Lato-Black';
   src: url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -375,7 +375,7 @@ template {
 }
 
 body {
-  font-family: "Lato-Regular", sans-serif;
+  font-family: "Lato-Regular";
   background-color: #E5E5E5;
 }
 
@@ -419,7 +419,7 @@ body {
 }
 
 .header-nav {
-  margin: 0;
+  margin: 0 5px 0 0;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -427,11 +427,18 @@ body {
   list-style: none;
 }
 
+.header-nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header-nav__item:not(:last-child) {
   margin-right: 30px;
 }
 
 .header-nav__link {
+  font-family: 'Lato-Black';
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
@@ -558,11 +565,10 @@ body {
 .tabs-list__title {
   margin: 0;
   padding: 0 25px 20px 25px;
-  font-family: 'Lato-Black', sans-serif;
+  font-family: 'Lato-Black';
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #262D33;
   border-bottom: 1px solid #D9DADB;
@@ -601,12 +607,11 @@ body {
   margin-bottom: 8px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  font-family: "Lato-Black", sans-serif;
+  font-family: "Lato-Black";
   font-weight: 700;
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
-  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
