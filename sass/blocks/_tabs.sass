@@ -3,17 +3,14 @@
   padding-top: 30px
   margin-bottom: 30px
   &-wrapper
-    display: grid
-    grid-template-columns: repeat(12, 1fr)
-    grid-template-rows: 570px
-    // grid-column-gap: 30px
+    height: 570px
+    display: flex
     border-radius: 10px
     overflow: hidden
   &-content
-    grid-row: 1 / 1
-    grid-column: 1 / 11
+    width: 877px
+    height: 100%
     list-style-type: none
-    max-width: 877px
     padding: 0
     margin: 0
     &__wrapper
@@ -44,11 +41,9 @@
         background-position: center
 
   &-list
-    max-width: 263px
-    margin-left: 22px
+    width: 263px
+    height: 100%
     padding-top: 20px
-    grid-row: 1 / 1
-    grid-column: 13 / 10
     background-color: $light
     &__ul
       display: flex
@@ -76,6 +71,8 @@
       flex-basis: 100%
       border-bottom: 1px solid #D9DADB
       cursor: pointer
+      &:hover
+        background: darken($light, 10%)
       &--active
         background-color: #F5F5F5
       &--last
@@ -142,7 +139,7 @@
       color: $light
       font-family: "Roboto Slab", serif
       font-style: normal
-      font-weight: bold
+      font-weight: 700
       font-size: 40px
       line-height: 50px
     &__topic
@@ -163,5 +160,8 @@
       background-color: $blue
       border-radius: 20px
       border: none
+      cursor: pointer
+      &:hover
+        background: darken($blue, 10%)
     &__arrow
       margin-left: 5px

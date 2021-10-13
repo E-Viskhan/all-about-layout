@@ -439,6 +439,10 @@ body {
   color: #ffffff;
 }
 
+.header-nav__link:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
 .header__request-btn {
   width: 261px;
   padding: 9px 0 10px 0;
@@ -450,6 +454,11 @@ body {
   background: #656B70;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
+}
+
+.header__request-btn:hover {
+  background: #4d5155;
 }
 
 .tabs {
@@ -460,24 +469,18 @@ body {
 }
 
 .tabs-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
-  -ms-grid-rows: 570px;
-      grid-template-rows: 570px;
+  height: 570px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .tabs-content {
-  -ms-grid-row: 1;
-  grid-row: 1 / 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 10;
-  grid-column: 1 / 11;
+  width: 877px;
+  height: 100%;
   list-style-type: none;
-  max-width: 877px;
   padding: 0;
   margin: 0;
 }
@@ -535,14 +538,9 @@ body {
 }
 
 .tabs-list {
-  max-width: 263px;
-  margin-left: 22px;
+  width: 263px;
+  height: 100%;
   padding-top: 20px;
-  -ms-grid-row: 1;
-  grid-row: 1 / 1;
-  -ms-grid-column: 13;
-  -ms-grid-column-span: -3;
-  grid-column: 13 / 10;
   background-color: #ffffff;
 }
 
@@ -584,6 +582,10 @@ body {
       flex-basis: 100%;
   border-bottom: 1px solid #D9DADB;
   cursor: pointer;
+}
+
+.tabs-list__item:hover {
+  background: #e6e6e6;
 }
 
 .tabs-list__item--active {
@@ -689,7 +691,7 @@ body {
   color: #ffffff;
   font-family: "Roboto Slab", serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 40px;
   line-height: 50px;
 }
@@ -714,6 +716,11 @@ body {
   background-color: #4592FF;
   border-radius: 20px;
   border: none;
+  cursor: pointer;
+}
+
+.content-article__btn:hover {
+  background: #1274ff;
 }
 
 .content-article__arrow {
