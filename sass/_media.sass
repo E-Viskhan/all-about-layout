@@ -1,3 +1,88 @@
-// media for max-width 1200 - container 960
+// media for max-width 1200 - container 960 - 
+// media for max-width 991 - container 700 - уже планшет дизайн
+  // все меняется под планшетную версию
 // media for max-width 991 - container 700
-// media for max-width 991 - container 700
+// media for max-width 768px  - уже бургер меню появляется
+// media for max-width 572 - container 90%
+
+//        Ниже более актуальная информация
+@media (max-width: 1200px)
+  .container
+    width: 960px
+  .header
+    &-nav
+      &__item
+        &:not(:last-child)
+          margin-right: 20px
+    &__request-btn
+      width: 230px
+  .tabs
+    padding: 20px 0
+    &-wrapper
+      height: 540px
+    &-content
+      width: 700px
+      &__wrapper
+        padding: 22px
+    &-list
+      width: 260px
+      &__item
+        min-height: 93px
+        padding: 13px 17px 11px 18px
+        &--last
+          min-height: 108px
+  // все еще комп версия, просто адаптируем все под новый контейнер
+@media(max-width: 992px)
+  .container
+    width: 700px
+  .header
+    &-logo
+      width: 100px
+      height: auto
+    &-nav
+      margin: 0
+      &__item:not(:last-child)
+        margin-right: 15px
+      &__link
+        font-size: 11px
+        line-height: 13px
+    &__request-btn
+      width: 154px
+      font-size: 11px
+      line-height: 13px
+  .tabs
+    background: linear-gradient(to bottom, $background-dark 67%, $background-grey 33%)
+    margin-bottom: 20px
+    &-wrapper
+      height: auto
+      flex-wrap: wrap
+    &-content
+      height: 400px
+    &-list
+      padding-top: 0
+      width: 100%
+      &__title
+        display: none
+      &__item
+        min-height: 100px
+        padding: 17px 12px 18px 12px
+        flex-basis: 233px
+        &:nth-child(3)
+          flex-basis: 234px
+        &:last-child, &:nth-last-child(2)
+          display: none
+      &__text
+        font-size: 13px
+  .content
+    &-article
+      max-width: 100%
+      &__title
+        font-size: 30px
+        line-height: 36px
+    &-author
+      margin-bottom: 118px
+// уже планшетная версия
+// @media(max-width: 768px)
+//   // уже есть бургер меню
+// @media(max-width: 576px)
+//   // мобильная версия

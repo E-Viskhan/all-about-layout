@@ -20,16 +20,14 @@
       height: 100%
       width: 100%
       background-repeat: no-repeat
-      background-size: 100% 100%
-      object-fit: cover
+      background-size: cover
+      background-position: center center
       &--active
         display: block
-        transition: display 2s
       &-0
         background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/tabs-content-img-0.png')
       &-1
         background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/tabs-content-img-1.png')
-        background-position: center center
       &-2
         background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/tabs-content-img-2.jpg')
       &-3
@@ -38,8 +36,6 @@
         background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/tabs-content-img-4.png')
       &-5
         background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/tabs-content-img-5.jpg')
-        background-position: center
-
   &-list
     width: 263px
     height: 100%
@@ -71,7 +67,7 @@
       border-bottom: 1px solid #D9DADB
       cursor: pointer
       &:hover
-        background: darken($light, 10%)
+        background: darken($light, 15%)
       &--active
         background-color: #F5F5F5
       &--last
@@ -108,7 +104,6 @@
   &-author
     display: flex
     align-items: center
-    margin-bottom: 142px
     &__info
       display: flex
       flex-direction: column
@@ -149,6 +144,8 @@
       text-transform: uppercase
       letter-spacing: 0.5px
     &__btn
+      display: flex
+      align-items: center
       padding: 10px 22px 10px 20px
       color: $light
       font-family: "Lato-Black", sans-serif
@@ -162,4 +159,4 @@
       &:hover
         background: darken($blue, 10%)
     &__arrow
-      margin-left: 5px
+      margin-left: 8px
