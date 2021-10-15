@@ -9,4 +9,10 @@ $(function () {
     $(activeContent).toggleClass('tabs-content__item--active')
     $(this).addClass('tabs-list__item--active')
   })
+
+  var menuButton = $('.header-burger');
+  menuButton.on('click', function () {
+    console.log('Клик по кнопке меню');
+    $('.header-nav').toggleClass('header-nav--visible')
+  })
 });

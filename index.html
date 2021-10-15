@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header--mobile-fixed">
       <div class="container">
         <div class="header-wrapper">
           <a href="#" class="header-link">
@@ -43,8 +43,22 @@
             <li class="header-nav__item">
               <a href="#" class="header-nav__link">Web Design</a>
             </li>
+            <li class="header-nav__item header-nav__item--mobile-visible">
+              <button class="header__request-btn header__request-btn">
+                оставить заявку
+              </button>
+            </li>
           </ul>
-          <button class="header__request-btn">оставить заявку</button>
+          <button
+            class="header__request-btn header__request-btn--mobile-visible"
+          >
+            оставить заявку
+          </button>
+          <button class="header-burger header-burger--mobile-visible">
+            <span class="header-burger__line"></span>
+            <span class="header-burger__line"></span>
+            <span class="header-burger__line"></span>
+          </button>
         </div>
         <!-- /.header-wrapper -->
       </div>
