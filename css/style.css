@@ -876,6 +876,9 @@ body {
   .header {
     min-height: 62px;
   }
+  .header-logo {
+    width: 115px;
+  }
   .header--mobile-fixed {
     position: fixed;
     top: 0;
@@ -926,6 +929,11 @@ body {
   }
   .header__request-btn:hover {
     background: #656B70;
+  }
+  .header__request-btn--mobile {
+    font-size: 16px;
+    line-height: 20px;
+    width: 200px;
   }
   .header__request-btn--mobile-visible {
     display: none;
