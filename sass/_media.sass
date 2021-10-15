@@ -17,20 +17,16 @@
     &__request-btn
       width: 230px
   .tabs
+    background: linear-gradient(to bottom, #262D33 75%, #EDEFF0 21%)
     padding: 20px 0
     &-wrapper
-      height: 540px
+      min-height: 540px
     &-content
       width: 700px
       &__wrapper
         padding: 22px
     &-list
       width: 260px
-      &__item
-        min-height: 93px
-        padding: 13px 17px 11px 18px
-        &--last
-          min-height: 110px
   .content
     &-article
       &__title
@@ -51,31 +47,38 @@
       &__link
         font-size: 11px
         line-height: 13px
+        &:hover
+          border-bottom: none
     &__request-btn
       width: 154px
       font-size: 11px
       line-height: 13px
+      &:hover
+        background: #656B70
   .tabs
     background: linear-gradient(to bottom, $background-dark 67%, $background-grey 33%)
     margin-bottom: 20px
     &-wrapper
-      height: auto
+      min-height: 500px
       flex-wrap: wrap
     &-content
-      height: 400px
+      min-height: 400px
     &-list
       padding-top: 0
       width: 100%
       &__title
         display: none
       &__item
+        border-bottom: none
         min-height: 100px
         padding: 17px 12px 18px 12px
-        flex-basis: 233px
+        flex-basis: 33%
         &:nth-child(3)
-          flex-basis: 234px
+          flex-basis: 34%
         &:last-child, &:nth-last-child(2)
           display: none
+        &:hover
+          background-color: $light
       &__text
         font-size: 13px
   .content
@@ -85,8 +88,9 @@
         min-height: 80px
         font-size: 30px
         line-height: 36px
-    &-author
-      margin-bottom: 118px
+      &__btn
+        &:hover
+          background: $blue
 // уже планшетная версия
 @media(max-width: 768px)
   body
@@ -109,7 +113,6 @@
         display: flex
         flex-direction: column
         align-items: center
-        justify-content: space-between
         overflow: auto
         // you can use also just mb for nav__item
         position: fixed
@@ -121,17 +124,16 @@
       &__item
         &:not(:last-child)
           margin-right: 0
+          margin-bottom: 20px
+        &:not(:nth-last-child(2))
+          margin-right: 0
         &--mobile
           &-visible
             display: flex
       &__link
         font-size: 16px
         line-height: 20px
-        &:hover
-          border-bottom: none
     &__request-btn
-      &:hover
-        background: #656B70
       &--mobile
         font-size: 16px
         line-height: 20px
@@ -142,6 +144,34 @@
       &--mobile
         &-visible
           display: flex
+  .tabs
+    background: linear-gradient(to bottom, $background-dark 59%, $background-grey 41%)
+    &-content
+      min-height: auto
+      &
+    &-list
+      &__item
+        flex-basis: 50%!important
+        &:nth-last-child(2)
+          display: flex
+  .content
+    &-article
+      margin-top: 100px
+      &__title
+        min-height: 130px
+        font-size: 24px
+        line-height: 30px
   // уже есть бургер меню
-// @media(max-width: 576px)
-//   // мобильная версия
+@media(max-width: 576px)
+  .content
+    &-article
+      margin-top: 40px
+  .tabs
+    background: linear-gradient(to bottom, #262D33 55%, #EDEFF0 45%)
+  // мобильная версия
+@media(max-width: 480px)
+  .tabs
+    background: linear-gradient(to bottom, #262D33 52%, #EDEFF0 48%)
+@media(max-width: 320px)
+  .tabs
+    background: linear-gradient(to bottom, #262D33 49%, #EDEFF0 51%)
