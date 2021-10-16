@@ -807,11 +807,12 @@ body {
      object-fit: cover;
 }
 
-.four-articles__text {
+.four-articles__title {
+  margin: 0 15px 0 0;
   width: 154px;
-  margin-right: 15px;
   font-family: "Lato-Black";
   font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -1002,7 +1003,7 @@ body {
   .four-articles__article:not(:last-child) {
     padding-right: 15px;
   }
-  .four-articles__text {
+  .four-articles__title {
     width: 130px;
   }
   .grid-main__wrapper {
@@ -1131,7 +1132,7 @@ body {
     padding-right: 0;
     border-right: none;
   }
-  .four-articles__text {
+  .four-articles__title {
     width: 190px;
     margin-right: 20px;
   }
@@ -1274,7 +1275,7 @@ body {
     padding-right: 0;
     border-right: 0;
   }
-  .four-articles__text {
+  .four-articles__title {
     width: auto;
     margin-right: 20px;
     font-size: 16px;
@@ -1309,7 +1310,7 @@ body {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, #262D33), color-stop(45%, #EDEFF0));
     background: linear-gradient(to bottom, #262D33 55%, #EDEFF0 45%);
   }
-  .four-articles__text {
+  .four-articles__title {
     width: 60%;
     font-size: 14px;
     margin-right: 0;

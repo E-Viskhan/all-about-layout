@@ -12,7 +12,6 @@ $(function () {
 
   var menuButton = $('.header-burger');
   menuButton.on('click', function () {
-    console.log('Клик по кнопке меню');
     $('.header-nav').toggleClass('header-nav--visible')
   })
 });
