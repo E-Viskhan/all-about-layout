@@ -39,7 +39,7 @@
   &-list
     width: 263px
     min-height: 100%
-    padding-top: 17px
+    padding-top: 20px
     background-color: $light
     &__ul
       display: flex
@@ -49,14 +49,14 @@
       list-style-type: none
     &__title
       margin: 0
-      padding: 0 25px 20px 25px
+      padding: 0 25px 19px 25px
       font-family: 'Lato-Black'
       font-style: normal
       font-size: 14px
       line-height: 20px
       text-transform: uppercase
       color: $title-color
-      border-bottom: 1px solid #D9DADB
+      border-bottom: 1px solid $line-color
     &__item
       min-height: 100px
       padding: 17px 25px 19px 25px
@@ -64,7 +64,7 @@
       align-content: start
       flex-wrap: wrap
       flex-basis: 100%
-      border-bottom: 1px solid #D9DADB
+      border-bottom: 1px solid $line-color
       cursor: pointer
       &:hover
         background: darken($light, 15%)
@@ -72,7 +72,7 @@
         background-color: #F5F5F5
       &--last
         border-bottom: none
-        min-height: 112px
+        min-height: 110px
     &__topic
       margin-bottom: 8px
       flex-basis: 100%
@@ -85,7 +85,7 @@
       &-1
         color: #3BBDC4
       &-2
-        color: #6E99AE
+        color: $blue-dark
       &-3
         color: #AC8EE3
       &-4
@@ -129,8 +129,8 @@
     margin-top: 140px
     &__title
       margin-top: 20px
-      margin-bottom: 0
-      min-height: 150px
+      margin-bottom: 20px
+      min-height: 130px
       color: $light
       font-family: "Roboto Slab", serif
       font-style: normal

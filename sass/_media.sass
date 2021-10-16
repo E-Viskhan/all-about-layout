@@ -18,7 +18,7 @@
       width: 230px
   .tabs
     background: linear-gradient(to bottom, #262D33 75%, #EDEFF0 21%)
-    padding: 20px 0
+    padding-top: 20px
     &-wrapper
       min-height: 540px
     &-content
@@ -30,11 +30,30 @@
   .content
     &-article
       &__title
-        min-height: 173px
+        min-height: 140px
+  .four-articles
+    &__wrapper
+      padding: 25px 20px 30px 20px
+    &__article:not(:last-child)
+      padding-right: 15px
+    &__text
+      width: 130px
+  .grid-main
+    &__wrapper
+      padding-top: 35px
+    &__img
+      width: 202px
+      height: 206px
+    &__top
+      align-items: center
+      padding-left: 25px
+      padding-bottom: 35px
+    &__left
+      padding-top: 0
+      margin-right: 10px
   // все еще комп версия, просто адаптируем все под новый контейнер
 @media(max-width: 992px)
   .container
-    width: 92%
     max-width: 700px
   .header
     &-logo
@@ -79,11 +98,15 @@
           display: none
         &:hover
           background-color: $light
+        &--active
+          &:hover
+            background-color: #F5F5F5
       &__text
         font-size: 13px
   .content
     &-article
       max-width: 100%
+      margin-top: 105px
       &__title
         min-height: 80px
         font-size: 30px
@@ -91,8 +114,45 @@
       &__btn
         &:hover
           background: $blue
+  .four-articles
+    &__wrapper
+      flex-wrap: wrap
+      padding: 25px
+    &__article
+      flex-basis: 47%
+      &:hover
+        opacity: unset
+      &:first-child, &:nth-child(2)
+        margin-bottom: 30px
+      &:not(:last-child)
+        padding-right: 28px
+      &:nth-child(2), &:nth-child(4)
+        padding-right: 0
+        border-right: none
+    &__text
+      width: 190px
+      margin-right: 20px
+    &__img
+      width: 80px
+      height: 65px
+      border-radius: 5px
+  .grid-articles
+    &__wrapper
+      grid-template-columns: repeat(3, 1fr)
+      grid-template-rows: repeat(4, minmax(175px, auto))
+      grid-gap: 20px
+  .grid-main
+    &__wrapper
+      padding-top: 30px
+    &__title
+      font-size: 22px
+      line-height: 26px
+    &__top
+      padding-bottom: 50px
 // уже планшетная версия
 @media(max-width: 768px)
+  .container
+    width: 92%
   body
     padding-top: 62px
   .header
@@ -114,7 +174,6 @@
         flex-direction: column
         align-items: center
         overflow: auto
-        // you can use also just mb for nav__item
         position: fixed
         right: 0
         left: 0
@@ -151,16 +210,46 @@
       &
     &-list
       &__item
-        flex-basis: 50%!important
+        flex-basis: 50%
+        &:nth-child(3)
+          flex-basis: 50%
         &:nth-last-child(2)
           display: flex
   .content
     &-article
       margin-top: 100px
       &__title
-        min-height: 130px
+        min-height: 95px
         font-size: 24px
         line-height: 30px
+  .four-articles
+    &__wrapper
+      padding: 35px
+    &__article
+      flex-basis: 100%
+      justify-content: space-between
+      &:not(:last-child)
+        margin-bottom: 10px
+        padding-right: 0
+        border-right: 0
+    &__text
+      width: auto
+      margin-right: 20px
+      font-size: 16px
+  .grid-articles
+    &__wrapper
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(5, minmax(175px, auto))
+  .grid-main
+    &__title
+      font-size: 25px
+      line-height: 30px
+    &__top
+      justify-content: space-between
+      padding-bottom: 30px
+    &__img
+      width: 250px
+      height: auto
   // уже есть бургер меню
 @media(max-width: 576px)
   .content
@@ -168,10 +257,50 @@
       margin-top: 40px
   .tabs
     background: linear-gradient(to bottom, #262D33 55%, #EDEFF0 45%)
+  .four-articles
+    &__text
+      width: 60%
+      font-size: 14px
+      margin-right: 0
+    &__img
+      width: 75px
+  .grid-articles
+    &__wrapper
+      grid-template-columns: 1fr
+      grid-template-rows: minmax(min-content, auto)
+      grid-auto-rows: minmax(min-content, auto)
+  .grid-main
+    &__wrapper
+      padding-top: 20px
+    &__top
+      padding-bottom: 20px
+      padding-left: 20px
+    &__left
+      width: 49%
+    &__title
+      font-size: 22px
+      line-height: 26px
+    &__img
+      width: 49%
+    &__bottom
+      padding-left: 20px
+      flex-wrap: wrap
+      // &--mobile
   // мобильная версия
 @media(max-width: 480px)
   .tabs
     background: linear-gradient(to bottom, #262D33 52%, #EDEFF0 48%)
+    &-list
+      &__item
+        flex-basis: 100%
+        &:nth-child(3)
+          flex-basis: 100%
+  .grid-main
+    &__img
+      display: none
+    &__left
+      width: 100%
+      max-width: 100%
 @media(max-width: 320px)
   .tabs
-    background: linear-gradient(to bottom, #262D33 49%, #EDEFF0 51%)
+    background: linear-gradient(to bottom, #262D33 40%, #EDEFF0 60%)
