@@ -1,0 +1,30 @@
+@mixin card($rows: 1, $columns: 1, $f-direction: column, $background: $light)
+  grid-column: span $columns
+  grid-row: span $rows
+  border-radius: 10px
+  overflow: hidden
+  background: $background
+  &__wrapper
+    display: flex
+    flex-direction: $f-direction
+  &__link
+    width: 100%
+    height: 100%
+    display: block
+    position: relative
+    z-index: 2
+    text-decoration: none
+@mixin card-title($color: $title-color)
+  margin: 0
+  font-family: Roboto Slab
+  font-style: normal
+  font-weight: bold
+  font-size: 16px
+  line-height: 25px
+  color: $color
+@mixin card-text($color: $grid-text)
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 20px
+  color: $color

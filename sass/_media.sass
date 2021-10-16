@@ -51,6 +51,18 @@
     &__left
       padding-top: 0
       margin-right: 10px
+  .grid-popular
+    &__btn
+      margin-bottom: 100px
+    &__title
+      margin-bottom: 18px
+    &__author-name
+      display: flex
+    &__desc
+      flex-wrap: wrap
+    &__date
+      flex-basis: 100%
+      margin-bottom: 5px
   // все еще комп версия, просто адаптируем все под новый контейнер
 @media(max-width: 992px)
   .container
@@ -250,6 +262,13 @@
     &__img
       width: 250px
       height: auto
+  .grid-popular
+    &__wrapper
+      padding-right: 20px
+      padding-left: 20px
+    &__date
+      margin-bottom: 0
+      flex-basis: auto
   // уже есть бургер меню
 @media(max-width: 576px)
   .content
@@ -270,6 +289,8 @@
       grid-template-rows: minmax(min-content, auto)
       grid-auto-rows: minmax(min-content, auto)
   .grid-main
+    grid-row: 1
+    grid-column: 1
     &__wrapper
       padding-top: 20px
     &__top
@@ -285,6 +306,9 @@
     &__bottom
       padding-left: 20px
       flex-wrap: wrap
+  .grid-popular
+    grid-row: 2
+    grid-column: 1
   // мобильная версия
 @media(max-width: 480px)
   .tabs

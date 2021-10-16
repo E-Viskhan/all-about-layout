@@ -88,3 +88,182 @@
     font-size: 12px
     line-height: 15px
     color: $grey-for-numbers
+.grid-popular
+  grid-column: span 1
+  grid-row: span 2
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/popular.jpeg')
+  background-position: center
+  background-size: cover
+  border-radius: 10px
+  overflow: hidden
+  &__wrapper
+    display: flex
+    flex-direction: column
+    padding: 19px 26px 25px 25px
+  &__link
+    position: relative
+    z-index: 2
+    display: block
+    text-decoration: none
+    color: $light
+  &__btn
+    margin-bottom: 116px
+    width: 92px
+    min-height: 25px
+    background-color: $template-green
+    border: none
+    cursor: pointer
+    border-radius: 5px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: $light
+    display: flex
+    align-items: center
+    justify-content: center
+  &__topic
+    margin-bottom: 23px
+    font-family: "Lato-Black"
+    font-style: normal
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: #E7D9FF
+  &__title
+    margin: 0 0 2px 0
+    min-height: 100px
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: $light
+  &__author
+    display: flex
+    align-items: center
+    &-img
+      margin-right: 10px
+      width: 45px
+      height: 45px
+      object-fit: cover
+      border-radius: 50%
+    &-name
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      opacity: 0.85
+  &__desc
+    display: flex
+    align-items: center
+    opacity: 0.4
+  &__date,&__comments, &__likes
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: $light
+  &__date
+    margin-right: 7px
+  &__comments
+    margin-right: 7px
+    padding-left: 20px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+      display: block
+      width: 15px
+      height: 15px
+      background-image: url("../img/icon-comments.svg")
+  &__likes
+    padding-left: 20px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+      display: block
+      width: 15px
+      height: 15px
+      background-image: url("../img/icon-likes.svg")
+.grid-checklist
+  @include card($background: $template-bluegreen)
+  position: relative
+  &::after
+    content: ""
+    display: block
+    width: 80px
+    height: 80px
+    position: absolute
+    top: 20px
+    right: 10px
+    background-image: url('../img/icon-file.svg')
+    background-repeat: no-repeat
+  &__wrapper
+    padding: 24px 25px 0 25px
+  &__title
+    @include card-title($light)
+    margin-bottom: 10px
+  &__text
+    @include card-text($color: #C1F4F5)
+    margin-bottom: 19px
+  &__bottom
+    padding: 12px 10px 13px 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-top: 1px solid #96E2E3
+  &__icon
+    margin-right: 10px
+  &__download
+    font-family: "Lato-Black"
+    @include card-text($color: $light)
+.grid-tags
+  @include card($f-direction: row, $rows: 2)
+  &__wrapper
+    flex-wrap: wrap
+    padding: 25px 10px 15px 25px
+  &__title
+    margin: 0
+    padding: 20px 25px 19px 25px
+    font-family: 'Lato-Black'
+    font-style: normal
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.5px
+    color: $title-color
+    text-transform: uppercase
+    border-bottom: 1px solid #000
+  &__tag
+    margin: 0 10px 15px 0
+    padding: 4px 15px 4px 14px
+    font-family: "Lato-Black"
+    font-style: normal
+    font-size: 14px
+    line-height: 20px
+    color: $title-color
+    border: 1px solid $line-color
+    border-radius: 5px
+    &:nth-child(2)
+      position: relative
+      &::after
+        content: ""
+        position: absolute
+        width: 17px
+        height: 21px
+        top: 79%
+        left: 34%
+        background-image: url('../img/icon-cursor.svg')
+        background-size: cover
+        background-position: center
