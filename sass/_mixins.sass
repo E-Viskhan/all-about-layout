@@ -28,3 +28,21 @@
   font-size: 14px
   line-height: 20px
   color: $color
+@mixin card-date($color: $grey-for-numbers)
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
+  line-height: 15px
+  color: $color
+@mixin simple-card()
+  @include card
+  &__wrapper
+    padding: 25px 25px 30px 25px
+  &__title
+    @include card-title
+    margin-bottom: 5px
+  &__text
+    @include card-text
+    margin: 0 0 10px 0
+  &__date
+    @include card-date

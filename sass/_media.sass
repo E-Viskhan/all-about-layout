@@ -40,20 +40,25 @@
       width: 130px
   .grid-main
     &__wrapper
-      padding-top: 35px
+      padding-top: 23px
+    &__title
+      font-size: 23px
+      line-height: 28px
     &__img
       width: 202px
       height: 206px
     &__top
       align-items: center
       padding-left: 25px
-      padding-bottom: 35px
+      padding-bottom: 25px
     &__left
       padding-top: 0
       margin-right: 10px
   .grid-popular
+    &__wrapper
+      padding-right: 20px
     &__btn
-      margin-bottom: 100px
+      margin-bottom: 90px
     &__title
       margin-bottom: 18px
     &__author-name
@@ -63,6 +68,46 @@
     &__date
       flex-basis: 100%
       margin-bottom: 5px
+  .grid-checklist
+    &__wrapper
+      padding: 19px 25px 0 25px
+    &__bottom
+      padding: 10px 10px 10px 10px
+    &__text
+      margin-bottom: 10px
+  .grid-tags
+    max-height: 370px
+    overflow: auto
+    &__wrapper
+      padding-left: 15px
+    &__title
+      padding: 20px 15px 20px 20px
+    &__tag
+      margin-right: 7px
+      padding-right: 13px
+      padding-left: 12px
+  .grid-tools
+    &__title
+      padding: 15px 20px 30px 20px
+  .grid-source
+    &__wrapper
+      padding: 25px 15px 20px 20px
+    &__text
+      margin-bottom: 20px
+  .grid-customers
+    &__wrapper
+      padding: 25px 14px 20px 14px
+    &__text
+      margin-bottom: 20px
+  .grid-stress
+    &__wrapper
+      padding: 15px 21px 20px 21px
+    &__title
+      height: 25px
+      overflow: hidden
+  .grid-methods
+    &__wrapper
+      padding: 15px 11px 20px 13px
   // все еще комп версия, просто адаптируем все под новый контейнер
 @media(max-width: 992px)
   .container
@@ -155,12 +200,42 @@
       grid-gap: 20px
   .grid-main
     &__wrapper
-      padding-top: 30px
+      padding-top: 25px
     &__title
       font-size: 22px
       line-height: 26px
     &__top
-      padding-bottom: 50px
+      padding-bottom: 30px
+  .grid-tools
+    grid-row: 3 / 5
+    grid-column: 1 / 2
+  .grid-source
+    grid-row: 3 / 4
+    grid-column: 2 / 3
+  .grid-customers
+    grid-row: 3 / 4
+    grid-column: 3 / 4
+    &__wrapper
+      padding: 25px 20px 20px 20px
+  .grid-stress
+    grid-row: 4 / 5
+    grid-column: 2 / 3
+  .grid-methods
+    grid-row: 4 / 5
+    grid-column: 3 / 4
+    &__wrapper
+      padding: 15px 25px 20px 25px
+  .grid-checklist
+    &__wrapper
+      padding: 15px 25px 0 25px
+  .grid-tags
+    grid-row: 5 / 6
+    grid-column: 2 / 3
+    max-height: 170px
+    &__tag
+      &:hover
+        background-color: $light
+        color: $title-color
 // уже планшетная версия
 @media(max-width: 768px)
   .container
@@ -263,12 +338,39 @@
       width: 250px
       height: auto
   .grid-popular
+    grid-row: 3 / 5
+    grid-column: 1 / 2
     &__wrapper
       padding-right: 20px
       padding-left: 20px
     &__date
       margin-bottom: 0
       flex-basis: auto
+  .grid-customers
+    grid-row: 3 / 4
+    grid-column: 2 / 3
+  .grid-source
+    grid-row: 4 / 5
+    grid-column: 2 / 3
+  .grid-tools
+    grid-row: 5 / 7
+    grid-column: 2 / 3
+  .grid-methods
+    grid-row: 5 / 6
+    grid-column: 1 / 2
+  .grid-stress
+    grid-row: 6 / 7
+    grid-column: 1 / 2
+  .grid-tags
+    grid-row: 7 / 9
+    grid-column: 2 / 3
+    max-height: 360px
+  .grid-checklist
+    grid-row: 7 / 8
+    grid-column: 1 / 2
+  .grid-social
+    grid-row: 8 / 9
+    grid-column: 1 / 2
   // уже есть бургер меню
 @media(max-width: 576px)
   .content
