@@ -14,4 +14,8 @@ $(function () {
   menuButton.on('click', function () {
     $('.header-nav').toggleClass('header-nav--visible')
   })
+  var favoriteBtn = $('.broad-article__favorite');
+  favoriteBtn.on('click', function () {
+    $(this).toggleClass('broad-article__favorite--active')
+  })
 });

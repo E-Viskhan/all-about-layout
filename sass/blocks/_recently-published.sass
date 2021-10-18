@@ -1,0 +1,86 @@
+.recently
+  &-published
+    grid-column: 2 / 3
+    background-color: $light
+    align-self: start
+    overflow: hidden
+    border-radius: 10px
+    &__title
+      margin: 0
+      padding: 20px 25px 19px 25px
+      font-family: "Lato-Black"
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $title-color
+      border-bottom: 1px solid $line-color
+    &__wrapper
+      padding: 0 25px 0 25px
+    &__link
+      padding: 11px 0 14px 0
+      display: block
+      text-decoration: none
+      font-family: "Lato-Black"
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $background-dark
+      text-align: center
+      border-top: 1px solid $line-color
+      transition: all 300ms ease
+      transform: none
+      &:hover
+        transform: scaleX(1.3)
+  &-article
+    position: relative
+    padding: 17px 0 17px 0
+    display: flex
+    align-items: center
+    &:not(:last-child)
+      border-bottom: 1px solid $line-color
+    @for $i from 1 through 7
+      &-#{$i}
+        &::after
+          content: "#{$i}"
+          width: 41px
+          height: 50px
+          position: absolute
+          top: 20px
+          right: 0
+          font-family: 'Lato-HeavyItalic'
+          font-size: 70px
+          line-height: 50px
+          color: $background-dark
+          opacity: 0.08
+    &__img
+      margin-right: 10px
+      width: 60px
+      height: 60px
+      object-fit: cover
+    &__link
+      max-height: 40px
+      overflow: hidden
+      display: flex
+      text-decoration: none
+      font-size: 14px
+      line-height: 20px
+      font-weight: normal
+      font-style: normal
+      color: $grid-text
+      transition: all 400ms ease
+      opacity: 1
+      &:hover
+        opacity: 0.6
+    &__title
+      margin: 0 0 5px 0
+    &__time
+      display: flex
+      font-size: 12px
+      line-height: 15px
+      font-style: normal
+      font-weight: normal
+      color: $grey-for-numbers

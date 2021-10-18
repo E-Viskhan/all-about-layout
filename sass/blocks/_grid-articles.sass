@@ -41,6 +41,9 @@
     font-size: 25px
     line-height: 30px
     color: $title-color
+    transition: all 300ms ease-in-out
+    &:hover
+      transform: scale(1.04)
   &__text
     margin: 0
     font-style: normal
@@ -97,6 +100,9 @@
   background-size: cover
   border-radius: 10px
   overflow: hidden
+  transition: all 300ms ease-in-out
+  &:hover
+    transform: scale(1.04)
   &__wrapper
     display: flex
     flex-direction: column
@@ -211,6 +217,10 @@
     right: 10px
     background-image: url('../img/icon-file.svg')
     background-repeat: no-repeat
+  &__link
+    transition: all 300ms ease-in-out
+    &:hover
+      transform: scale(1.04)
   &__wrapper
     padding: 24px 25px 0 25px
   &__title
@@ -232,7 +242,6 @@
     @include card-text($color: $light)
 .grid-tags
   @include card($f-direction: row, $rows: 2)
-
   &__wrapper
     flex-wrap: wrap
     padding: 25px 10px 15px 25px
@@ -263,20 +272,11 @@
     &:hover
       background-color: $template-green
       color: $light
-    &:nth-child(2)
-      position: relative
-      &::after
-        content: ""
-        position: absolute
-        width: 17px
-        height: 21px
-        top: 79%
-        left: 34%
-        background-image: url('../img/icon-cursor.svg')
-        background-size: cover
-        background-position: center
 .grid-tools
   @include card($rows: 2)
+  transition: all 300ms ease-in-out
+  &:hover
+    transform: scale(1.04)
   &__title
     padding: 15px 25px 30px 25px
     @include card-title
@@ -287,6 +287,9 @@
 .grid
   &-source, &-customers, &-stress, &-methods
     @include simple-card
+    transition: all 300ms ease-in-out
+    &:hover
+      transform: scale(1.04)
   &-customers
     &__text
       margin-bottom: 30px
@@ -299,6 +302,7 @@
   grid-column: span 1
   grid-row: span 1
   background-color: $light
+  border-radius: 10px
   &__title
     @include card-title
     margin: 0 0 25px 0
@@ -310,5 +314,8 @@
   &__img
     width: 50px
     height: 50px
+    transition: all 300ms ease-in-out
+    &:hover
+      transform: scale(1.1)
   &__link
     display: flex

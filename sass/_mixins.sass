@@ -1,3 +1,23 @@
+@mixin btn($arrow: "true")
+  @if ($arrow == "true")
+    &__arrow
+      margin-left: 8px
+  &__btn
+    display: flex
+    align-items: center
+    padding: 10px 22px 10px 20px
+    color: $light
+    font-family: "Lato-Black"
+    font-style: normal
+    font-size: 14px
+    line-height: 20px
+    background-color: $blue
+    border-radius: 20px
+    border: none
+    cursor: pointer
+    &:hover
+      background: darken($blue, 10%)
+
 @mixin card($rows: 1, $columns: 1, $f-direction: column, $background: $light)
   grid-column: span $columns
   grid-row: span $rows
@@ -46,3 +66,17 @@
     margin: 0 0 10px 0
   &__date
     @include card-date
+@mixin icon-before($image: "")
+  position: relative
+  padding-left: 20px
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+    display: block
+    width: 15px
+    height: 15px
+    background-image: url($image)
+    background-repeat: no-repeat
