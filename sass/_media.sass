@@ -120,6 +120,25 @@
         display: none
       &__text
         max-height: 80px
+  .slider
+    &-section
+      &__wrapper
+        grid-template-columns: repeat(4, 1fr)
+      &__slider
+        grid-column: 1 / 3
+        grid-row: 1 / 3
+  .interview
+    &-questions
+      grid-column: 3 / 5
+      grid-row: 1 / 2
+      &__br
+        display: none
+  .charging-eyes, .jquery-plagins
+    &__wrapper
+      padding: 20px
+    &__text
+      max-height: 80px
+      min-height: 80px
 @media(max-width: 992px)
   .container
     max-width: 700px
@@ -323,7 +342,29 @@
           opacity: 1
       &:nth-last-child(2), &:nth-last-child(3)
         border-bottom: none
-  // уже планшетная версия
+  .slider
+    &-section
+      &__wrapper
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: minmax(470px, auto)
+      &__slider
+        grid-column: 1 / 3
+        grid-row: 1 / 3
+  .interview
+    &-questions
+      grid-column: 1 / 3
+      grid-row: 3 / 4
+  .articles-slider, .interview-questions
+    &__btn
+      &:hover
+        background-color: $blue
+  .slick-dots
+    bottom: 20px
+  .charging-eyes, .jquery-plagins
+    &__wrapper
+      padding: 25px
+    &:hover
+      transform: none
 @media(max-width: 768px)
   .container
     width: 92%
@@ -503,6 +544,18 @@
         border-radius: 10px
       &__text
         max-height: 120px
+  .slider-section
+    &__wrapper
+      grid-template-rows: auto
+  .articles-slider
+    &__title
+      font-size: 30px
+      line-height: 40px
+  .interview
+    &-questions
+      &__wrapper
+        max-width: 220px
+
 @media(max-width: 576px)
   .content
     &-article
@@ -575,6 +628,8 @@
       flex-basis: 100%
       &:last-child
         display: flex
+      &:nth-last-child(3), &:nth-last-child(2)
+        border-bottom: 1px solid $line-color
   .broad
     &-article
       &__wrapper
@@ -591,6 +646,15 @@
         margin-top: 15px
       &__text
         max-height: 80px
+  .articles
+    &-slider
+      &__title
+        font-size: 24px
+        line-height: 30px
+        margin-bottom: 30px
+  .charging-eyes, .jquery-plagins
+    grid-column: span 2
+
 @media(max-width: 480px)
   .tabs
     background: linear-gradient(to bottom, #262D33 52%, #EDEFF0 48%)
@@ -615,6 +679,17 @@
         border-radius: 10px
       &__text
         max-height: 120px
+  .articles
+    &-slider
+      &__wrapper
+        padding: 10px 20px 20px 20px
+      &__title
+        font-size: 20px
+        line-height: 25px
+      &__btn
+        margin-bottom: 15px
+  .slick-dots
+    bottom: 10px
 @media(max-width: 320px)
   .tabs
     background: linear-gradient(to bottom, #262D33 40%, #EDEFF0 60%)
