@@ -205,6 +205,7 @@
       height: 65px
       border-radius: 5px
   .grid-articles
+    margin-bottom: 40px
     &__wrapper
       grid-template-columns: repeat(3, 1fr)
       grid-template-rows: repeat(4, minmax(175px, auto))
@@ -276,10 +277,13 @@
     &__btn
       &:hover
         background-color: $blue
+    &--mb
+      margin-bottom: 40px
   .broad
     &-recently-container
       grid-template-columns: 1fr
       grid-template-rows: repeat(2, min-content)
+      margin-bottom: 40px
     &__articles
       grid-row: 1 / 2
       grid-column: 1 / 2

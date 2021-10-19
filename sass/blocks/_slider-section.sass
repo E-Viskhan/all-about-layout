@@ -1,0 +1,127 @@
+.slider
+  &-section
+    background-color: $background-dark
+    &__wrapper
+      padding: 60px 0 60px 0
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: minmax(370px, auto) minmax(170px, auto)
+      grid-gap: 30px
+    &__slider
+      grid-column: span 1
+      grid-row: span 2
+.articles-slider
+  min-height: 0
+  min-width: 0
+  color: $light
+  border-radius: 10px
+  overflow: hidden
+  &__tag
+    margin: 18px 0 0 18px
+    padding: 5px 12px
+    background: $template-green
+    border-radius: 3px
+    border: none
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: $light
+  &__wrapper
+    padding: 7px 50px 50px 50px
+  &__slide
+    height: 100%
+    width: 100%
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/articles-slider__background-1.jpg)
+    background-size: cover
+    background-position: center
+  &__author
+    margin-bottom: 30px
+    display: flex
+    flex-direction: column
+    align-items: center
+    &-img
+      margin-bottom: 8px
+      width: 45px
+      height: 45px
+      border-radius: 50%
+    &-name
+      margin-bottom: 2px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      opacity: 0.85
+    &-work
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      opacity: 0.4
+  &__title
+    margin: 0
+    margin-bottom: 45px
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 50px
+    text-align: center
+  @include btn
+  &__btn
+    margin: 0 auto
+  &__icon
+    margin-right: 9px
+    width: 19px
+    height: 15px
+  &__more
+    margin-right: 8px
+    font-family: "Lato-Black"
+  &__number
+    font-weight: normal
+    color: #C5E4FC
+
+.slick
+  &-list, &-track
+    height: 100%
+.slick-dots
+  margin: 0
+  padding: 0
+  width: 100%
+  position: absolute
+  bottom: 45px
+  list-style: none
+  display: flex
+  justify-content: center
+  li
+    height: 20px
+    width: 20px
+    margin: 0 2px
+    padding: 0
+    cursor: pointer
+    button
+      border: 0
+      background: transparent
+      display: block
+      height: 20px
+      width: 20px
+      outline: none
+      line-height: 0px
+      font-size: 0px
+      color: transparent
+      padding: 5px
+      cursor: pointer
+      &:before
+        content: '\2022'
+        width: 20px
+        height: 20px
+        font-size: 14px
+        line-height: 18px
+        text-align: center
+        color: $line-color
+        opacity: 1
+      &:hover, &:focus
+        &:before
+          opacity: 0.8
+    &.slick-active button:before
+      color: $light
