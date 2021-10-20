@@ -139,6 +139,9 @@
     &__text
       max-height: 80px
       min-height: 80px
+  .footer
+    &-nav
+      grid-template-columns: repeat(6, 1fr)
 @media(max-width: 992px)
   .container
     max-width: 700px
@@ -153,8 +156,8 @@
       &__link
         font-size: 11px
         line-height: 13px
-        &:hover
-          border-bottom: none
+        &:after
+          display: none
     &__request-btn
       width: 154px
       font-size: 11px
@@ -365,6 +368,49 @@
       padding: 25px
     &:hover
       transform: none
+  .footer
+    &__title
+      font-size: 30px
+      line-height: 36px
+    &__top
+      margin-bottom: 50px
+    &-form
+      &__btn
+        &:hover
+          background: $blue
+    &-nav
+      grid-template-rows: repeat(2, auto)
+      grid-template-columns: repeat(3, 1fr)
+      &__list
+        display: flex
+        flex-direction: column
+        align-items: center
+        &:first-child, &:nth-child(2), &:nth-child(3)
+          margin-bottom: 30px
+      &__link
+        &:after
+          display: none
+    &-main-nav
+      &__logo
+        margin-right: 20px
+        &:hover
+          transform: none
+      &__link
+        border-bottom: none
+        font-size: 13px
+        &:hover
+          border-bottom: none
+      &__item:not(:last-child)
+        margin-right: 16px
+    &-social
+      &__img
+        &:hover
+          transform: none
+      &__link:not(:last-child)
+        margin-right: 5px
+    &-copyright
+      &__text
+        max-width: 70%
 @media(max-width: 768px)
   .container
     width: 92%
@@ -555,6 +601,31 @@
     &-questions
       &__wrapper
         max-width: 220px
+  .footer
+    &-main-nav
+      flex-wrap: wrap
+      &__link
+        font-size: 14px
+      &__social
+        margin: 0 auto
+      &__ul
+        margin-right: 0
+    &-bottom
+      &__wrapper
+        margin-right: auto
+        margin-left: auto
+        margin-bottom: 30px
+    &-copyright
+      &__text
+        max-width: 100%
+        margin-bottom: 25px
+    &-social
+      &__link
+        &:not(:last-child)
+          margin-right: 15px
+
+.footer-copyright
+  flex-direction: column
 
 @media(max-width: 576px)
   .content
@@ -654,6 +725,54 @@
         margin-bottom: 30px
   .charging-eyes, .jquery-plagins
     grid-column: span 2
+  .footer
+    &__title
+      font-size: 24px
+      line-height: 30px
+    &-form
+      &__input
+        width: 250px
+      &__btn
+        padding-right: 15px
+        padding-left: 15px
+    &-nav
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(3, auto)
+      &__list
+        margin-bottom: 30px
+        align-items: flex-start
+
+    &-bottom
+      &__wrapper
+        display: flex
+        flex-direction: column
+        align-content:
+        margin: 0
+        justify-content: safe
+        flex-basis: 100%
+
+    &-main-nav
+      justify-content: space-around
+      &__logo, &__item:not(:last-child), &__social
+        margin: 0
+      &__ul
+        flex-direction: column
+        align-items: center
+      &__item
+        margin-bottom: 20px!important
+@media (max-width: 992px)
+  .footer-main-nav__item:not(:last-child)
+    /* margin-right: 16px; */
+
+  .footer-main-nav__logo
+    /* margin-right: 20px; */
+    margin-bottom: 25px
+
+.footer-main-nav__item:not(:last-child)
+  /* margin-right: 29px; */
+
+.footer-main-nav__logo
+  /* margin-right: 30px; */
 
 @media(max-width: 480px)
   .tabs
@@ -690,6 +809,17 @@
         margin-bottom: 15px
   .slick-dots
     bottom: 10px
+
+  .footer
+    &-form
+      display: flex
+      flex-direction: column
+      width: 100%
+      &__input
+        width: 100%
+        margin-bottom: 15px
+    &__title
+      font-size: 5.3vw
 @media(max-width: 320px)
   .tabs
     background: linear-gradient(to bottom, #262D33 40%, #EDEFF0 60%)

@@ -3,8 +3,7 @@
     &__arrow
       margin-left: 8px
   &__btn
-    display: flex
-    align-items: center
+    display: inline-block
     padding: 10px 22px 10px 20px
     color: $light
     font-family: "Lato-Black"
@@ -80,3 +79,13 @@
     height: 15px
     background-image: url($image)
     background-repeat: no-repeat
+@mixin h1-title
+  margin: 0
+  font-family: Roboto Slab
+  font-style: normal
+  font-weight: bold
+  font-size: 40px
+  line-height: 50px
+  color: $title-color
+@mixin footer-navlist-border($color: $template-red)
+  border-top: 5px solid $color

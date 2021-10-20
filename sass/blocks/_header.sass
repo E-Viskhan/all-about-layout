@@ -29,8 +29,16 @@
       font-size: 14px
       line-height: 20px
       color: $light
-      &:hover
-        border-bottom: 1px solid $light
+      &::after
+        content: ''
+        display: block
+        width: 0
+        height: 2px
+        background: $light
+        transition: width .3s
+      &:hover::after
+        width: 100%
+        transition: width .3s
   &__request-btn
     width: 261px
     padding: 9px 0 10px 0

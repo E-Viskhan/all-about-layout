@@ -30,7 +30,7 @@ $(function () {
     dots: true,
     dotsClass: 'slick-dots',
     appendDots: $(".slider-section__slider"),
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000
   });
   // Удаление дефолтных чисел у пагинации, нет, другого способа нет)

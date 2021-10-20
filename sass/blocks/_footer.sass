@@ -1,0 +1,142 @@
+.footer
+  &__wrapper
+    padding: 60px 0 55px 0
+  &__top
+    margin-bottom: 70px
+    margin-top: 3px
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__title
+    // min-width: 734px
+    @include h1-title
+    margin-bottom: 25px
+  &-form
+    &__input
+      @include card-text($color: $grey-for-numbers)
+      width: 313px
+      height: 40px
+      padding: 10px 15px 10px 15px
+      border: 1px solid #D9DADB
+      border-radius: 5px
+    @include btn
+    &__btn
+      display: inline-block
+      padding-right: 25px
+      padding-left: 25px
+  &-nav
+    margin-bottom: 64px
+    display: grid
+    grid-template-columns: repeat(5, 195px) 165px
+    &__list
+      margin: 0
+      padding: 0
+      padding-top: 30px
+      list-style: none
+    &__news
+      @include footer-navlist-border
+    &__articles
+      @include footer-navlist-border($color: #AC8EE3)
+    &__videolessons
+      @include footer-navlist-border($color: $blue)
+    &__courses
+      @include footer-navlist-border($color: #FFA34D)
+    &__information
+      @include footer-navlist-border($color: $template-green)
+    &__categories
+      @include footer-navlist-border($color: $blue-dark)
+    &__title
+      margin: 0
+      margin-bottom: 25px
+      font-family: "Lato-Black"
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $background-dark
+    &__item
+      display: flex
+      &:not(:last-child)
+        margin-bottom: 15px
+    &__link
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      color: $grid-text
+      &::after
+        content: ''
+        display: block
+        width: 0
+        height: 2px
+        background: $grid-text
+        transition: width .3s
+      &:hover::after
+        width: 100%
+        transition: width .3s
+  &-main-nav
+    padding-top: 30px
+    padding-bottom: 29px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-top: 1px solid $line-color
+    border-bottom: 1px solid $line-color
+    &__ul
+      display: flex
+      list-style: none
+      margin: 0
+      padding: 0
+      margin-right: 25px
+    &__item
+      &:not(:last-child)
+        margin-right: 29px
+    &__link
+      font-family: "Lato-Black"
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $background-dark
+      border-bottom: 3px solid transparent
+      transition: all 300ms ease
+      &:hover
+        border-bottom: 3px solid $background-dark
+    &__logo
+      margin-right: 30px
+      transform: none
+      transition: transform 300ms ease
+      &:hover
+        transform: scale(1.1)
+      &-link
+        display: flex
+  &-bottom
+    &__wrapper
+      display: flex
+      align-items: center
+  &-social
+    &__link:not(:last-child)
+      margin-right: 15px
+    &__img
+      width: 40px
+      height: 40px
+      transform: none
+      transition: transform 300ms ease
+      &:hover
+        transform: scale(1.1)
+  &-copyright
+    padding-top: 40px
+    padding-bottom: 55px
+    display: flex
+    justify-content: space-between
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $grey-for-numbers
+    &__text
+      padding: 0
+      margin: 0
+      max-width: 750px
