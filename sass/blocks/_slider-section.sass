@@ -151,6 +151,7 @@
     margin: 0 2px
     padding: 0
     cursor: pointer
+    opacity: 0.4
     button
       border: 0
       background: transparent
@@ -175,8 +176,10 @@
       &:hover, &:focus
         &:before
           opacity: 0.8
-    &.slick-active button:before
-      color: $light
+    &.slick-active
+      opacity: 1
+      button:before
+        color: $light
 .charging-eyes, .jquery-plagins
   @include simple-card
   transform: none

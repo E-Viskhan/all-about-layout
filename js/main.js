@@ -30,16 +30,24 @@ $(function () {
     dots: true,
     dotsClass: 'slick-dots',
     appendDots: $(".slider-section__slider"),
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000
   });
   // Удаление дефолтных чисел у пагинации, нет, другого способа нет)
   var dotNums = $(".slick-dots button").toArray();
-  console.log(dotNums);
   function removeText(item) {
     item.innerHTML = "";
   }
   dotNums.forEach(removeText);
   // Конец кода слайдера
 
+  // Плавная прокрутка по якорным ссылка
+  var $page = $('html, body');
+  $('a[href*="#"]').on("click", function () {
+    $page.animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 800);
+    return false;
+  });
+  // Конец плавной прокрутки по якорным ссылкам
 });

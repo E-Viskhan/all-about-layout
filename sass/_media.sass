@@ -409,8 +409,9 @@
       &__link:not(:last-child)
         margin-right: 5px
     &-copyright
+      flex-direction: column
       &__text
-        max-width: 70%
+        margin-bottom: 30px
 @media(max-width: 768px)
   .container
     width: 92%
@@ -610,6 +611,8 @@
         margin: 0 auto
       &__ul
         margin-right: 0
+      &__logo
+        margin-bottom: 0!important
     &-bottom
       &__wrapper
         margin-right: auto
@@ -623,10 +626,6 @@
       &__link
         &:not(:last-child)
           margin-right: 15px
-
-.footer-copyright
-  flex-direction: column
-
 @media(max-width: 576px)
   .content
     &-article
@@ -760,19 +759,9 @@
         align-items: center
       &__item
         margin-bottom: 20px!important
-@media (max-width: 992px)
-  .footer-main-nav__item:not(:last-child)
-    /* margin-right: 16px; */
-
-  .footer-main-nav__logo
-    /* margin-right: 20px; */
-    margin-bottom: 25px
-
-.footer-main-nav__item:not(:last-child)
-  /* margin-right: 29px; */
-
-.footer-main-nav__logo
-  /* margin-right: 30px; */
+      &__logo
+        &-link
+          margin-bottom: 30px
 
 @media(max-width: 480px)
   .tabs

@@ -18,38 +18,38 @@
     <header class="header header--mobile-fixed">
       <div class="container">
         <div class="header-wrapper">
-          <a href="#" class="header-link">
+          <a href="index.php" class="header-link">
             <img src="img/header-logo.svg" alt="logo" class="header-logo" />
           </a>
           <ul class="header-nav">
             <li class="header-nav__item">
-              <a href="#" class="header-nav__link">Статьи</a>
+              <a href="#articles" class="header-nav__link">Статьи</a>
             </li>
             <li class="header-nav__item">
-              <a href="#" class="header-nav__link">Новости</a>
+              <a href="#news" class="header-nav__link">Новости</a>
             </li>
             <li class="header-nav__item">
-              <a href="#" class="header-nav__link">Горячее</a>
+              <a href="#hot" class="header-nav__link">Горячее</a>
             </li>
             <li class="header-nav__item">
-              <a href="#" class="header-nav__link">HTML</a>
+              <a href="#footer" class="header-nav__link">HTML</a>
             </li>
             <li class="header-nav__item">
-              <a href="#" class="header-nav__link">CSS</a>
+              <a href="#footer" class="header-nav__link">CSS</a>
             </li>
             <li class="header-nav__item">
-              <a href="#" class="header-nav__link">JavaScript</a>
+              <a href="#footer" class="header-nav__link">JavaScript</a>
             </li>
             <li class="header-nav__item">
-              <a href="#" class="header-nav__link">Web Design</a>
+              <a href="#footer" class="header-nav__link">Web Design</a>
             </li>
             <li class="header-nav__item header-nav__item--mobile-visible">
-              <button class="header__request-btn header__request-btn--mobile">
+              <button data-toggle="modal" class="header__request-btn header__request-btn--mobile">
                 оставить заявку
               </button>
             </li>
           </ul>
-          <button
+          <button data-toggle="modal"
             class="header__request-btn header__request-btn--mobile-visible"
           >
             оставить заявку
@@ -336,7 +336,7 @@
       <!-- /.container -->
     </section>
     <!-- /.tabs -->
-    <section class="four-articles">
+    <section class="four-articles" id="hot">
       <div class="container">
         <div class="four-articles__wrapper">
           <a class="four-articles__article" href="#">
@@ -381,7 +381,7 @@
       <!-- /.container -->
     </section>
     <!-- /.four-articles -->
-    <section class="grid-articles">
+    <section class="grid-articles" id="articles">
       <div class="container">
         <div class="grid-articles__wrapper">
           <div class="grid-articles__main grid-main">
@@ -643,7 +643,7 @@
       <!-- /.container -->
     </section>
     <!-- /.full-width -->
-    <div class="broad-recently-container container">
+    <div class="broad-recently-container container" id="news">
       <section class="broad-articles">
         <div class="broad-articles__article broad-article">
           <div class="broad-article__wrapper">
@@ -1341,7 +1341,7 @@
       <!-- /.container -->
     </section>
     <!-- /.slider-section -->
-    <section class="footer">
+    <section class="footer" id="footer">
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__top footer-top">

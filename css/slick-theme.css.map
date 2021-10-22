@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../sass/slick-theme.sass"
-    ],
-    "names": [],
-    "file": "slick-theme.css"
-}
