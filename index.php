@@ -1543,11 +1543,39 @@
       <!-- /.container -->
     </section>
     <!-- /.footer -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Кнопка закрытия">
+        </a>
+        <form class="modal-form modal__form" action="send.php">
+            <h2 class="modal__title">Обратная связь</h2>
+            <h3 class="modal__input-title">Тема</h3>
+            <select class="modal__input modal__select modal-select" required>
+              <option class="modal-select__item modal-select__placeholder" value="" hidden>Выберите тему</option>
+              <option class="modal-select__item" value="html">HTML</option>
+              <option class="modal-select__item" value="css">CSS</option>
+              <option class="modal-select__item" value="javascript">JavaScript</option>
+              <option class="modal-select__item" value="jquery">JQuery</option>
+            </select>
+            <h3 class="modal__input-title">Сообщение</h3>
+            <textarea class="modal__input modal__message" name="message"></textarea>
+            <h3 class="modal__input-title">Email</h3>
+            <input class="modal__input" type="email">
+            <div class="modal__checkbox-container">
+              <input class="modal__checkbox-check custom-checkbox" type="checkbox" name="checkbox" id="modal__checkbox" value="agree">
+              <label class="modal__checkbox-text" for="modal__checkbox">Согласен с обработкой данных</label>
+            </div>
+            <!-- /.form__checkbox-container -->
+            <button class="modal__submit">Отправить</button>
+          </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>
