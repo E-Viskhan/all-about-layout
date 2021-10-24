@@ -339,7 +339,7 @@
     <section class="four-articles" id="hot">
       <div class="container">
         <div class="four-articles__wrapper">
-          <a class="four-articles__article" href="#">
+          <a class="four-articles__article" href="article.php">
             <h2 class="four-articles__title">
               25 способов настроить&nbsp;слайдер
             </h2>
@@ -349,7 +349,7 @@
               class="four-articles__img"
             />
           </a>
-          <a class="four-articles__article" href="#">
+          <a class="four-articles__article" href="article.php">
             <h2 class="four-articles__title">Главные фишки фрилансера</h2>
             <img
               src="img/four-articles__img-2.png"
@@ -357,7 +357,7 @@
               class="four-articles__img"
             />
           </a>
-          <a class="four-articles__article" href="#">
+          <a class="four-articles__article" href="article.php">
             <h2 class="four-articles__title">
               Техника управлеия временем “Помодоро”
             </h2>
@@ -367,7 +367,7 @@
               class="four-articles__img"
             />
           </a>
-          <a class="four-articles__article" href="#">
+          <a class="four-articles__article" href="article.php">
             <h2 class="four-articles__title">Что нужно знать о Git и GitHub</h2>
             <img
               src="img/four-articles__img-4.png"
@@ -389,7 +389,7 @@
               <div class="grid-main__top">
                 <div class="grid-main__left">
                   <span class="grid-main__topic">Статьи</span>
-                  <a href="#" class="grid-main__link">
+                  <a href="article.php" class="grid-main__link">
                     <h2 class="grid-main__title">
                       Вам предложили работу мечты, но вы не можете...
                     </h2>
@@ -434,7 +434,7 @@
           </div>
           <!-- /.grid-articles__main -->
           <div class="grid-articles__popular grid-popular">
-            <a href="#" class="grid-popular__link">
+            <a href="article.php" class="grid-popular__link">
               <div class="grid-popular__wrapper">
                 <span class="grid-popular__btn">Популярное</span>
                 <span class="grid-popular__topic">Web design</span>
@@ -512,7 +512,7 @@
           </div>
           <!-- /.grid-articles__tags grid-tags -->
           <div class="grid-articles__tools grid-tools">
-            <a href="#" class="grid-tools__link">
+            <a href="article.php" class="grid-tools__link">
               <div class="grid-tools__wrapper">
                 <img
                   src="img/notebook.png"
@@ -528,7 +528,7 @@
           </div>
           <!-- /.grid-articles__tools grid-tools -->
           <div class="grid-articles__source grid-source">
-            <a href="#" class="grid-source__link">
+            <a href="article.php" class="grid-source__link">
               <div class="grid-source__wrapper">
                 <h2 class="grid-source__title">Удачные референсы</h2>
                 <p class="grid-source__text">
@@ -542,7 +542,7 @@
           </div>
           <!-- /.grid-articles__source grid-source -->
           <div class="grid-articles__customers grid-customers">
-            <a href="#" class="grid-customers__link">
+            <a href="article.php" class="grid-customers__link">
               <div class="grid-customers__wrapper">
                 <h2 class="grid-customers__title">Заказчики — мудаки?</h2>
                 <p class="grid-customers__text">
@@ -555,7 +555,7 @@
           </div>
           <!-- /.grid-articles__customers grid-customers -->
           <div class="grid-articles__stress grid-stress">
-            <a href="#" class="grid-stress__link">
+            <a href="article.php" class="grid-stress__link">
               <div class="grid-stress__wrapper">
                 <h2 class="grid-stress__title">Работа без стресса — это...</h2>
                 <p class="grid-stress__text">
@@ -569,7 +569,7 @@
           </div>
           <!-- /.grid-articles__stress grid-stress -->
           <div class="grid-articles__methods grid-methods">
-            <a href="#" class="grid-methods__link">
+            <a href="article.php" class="grid-methods__link">
               <div class="grid-methods__wrapper">
                 <h2 class="grid-methods__title">Бесплатные методы...</h2>
                 <p class="grid-methods__text">
@@ -667,7 +667,7 @@
                 >Новости</span
               >
               <h2 class="broad-article__title">
-                <a href="#" class="broad-article__link"
+                <a href="article.php" class="broad-article__link"
                   >Новый налоговый режим для фрилансеров — налог на проф.
                   доход</a
                 >
@@ -711,7 +711,7 @@
                 >Мнения</span
               >
               <h2 class="broad-article__title">
-                <a href="#" class="broad-article__link"
+                <a href="article.php" class="broad-article__link"
                   >Платные курсы — это не быстрый способ выйти на нужный
                   уровень</a
                 >
@@ -756,7 +756,7 @@
                 >Горячее</span
               >
               <h2 class="broad-article__title">
-                <a href="#" class="broad-article__link"
+                <a href="article.php" class="broad-article__link"
                   >Из-за ограничений стали недоступны серверы Telegram. К чему
                   это может...</a
                 >
@@ -800,7 +800,7 @@
                 >Мнения</span
               >
               <h2 class="broad-article__title">
-                <a href="#" class="broad-article__link"
+                <a href="article.php" class="broad-article__link"
                   >В вашем портфолио могут быть фейковые проекты, если вы
                   сделали...</a
                 >
@@ -844,7 +844,7 @@
                 >Горячее</span
               >
               <h2 class="broad-article__title">
-                <a href="#" class="broad-article__link"
+                <a href="article.php" class="broad-article__link"
                   >Список стран, куда можно улететь</a
                 >
               </h2>
@@ -887,7 +887,7 @@
                 >Подборки</span
               >
               <h2 class="broad-article__title">
-                <a href="#" class="broad-article__link"
+                <a href="article.php" class="broad-article__link"
                   >Список Youtube каналов для тех, кто только начинает изучать
                   разработку</a
                 >
@@ -927,7 +927,7 @@
             />
             <div class="recently-article__wrapper">
               <h3 class="recently-article__title">
-                <a href="#" class="recently-article__link"
+                <a href="article.php" class="recently-article__link"
                   >Работа на удаленке, как это теперь</a
                 >
               </h3>
@@ -950,7 +950,7 @@
             />
             <div class="recently-article__wrapper">
               <h3 class="recently-article__title">
-                <a href="#" class="recently-article__link"
+                <a href="article.php" class="recently-article__link"
                   >Для чего нужен Node.js и с чем...</a
                 >
               </h3>
@@ -972,7 +972,7 @@
             />
             <div class="recently-article__wrapper">
               <h3 class="recently-article__title">
-                <a href="#" class="recently-article__link"
+                <a href="article.php" class="recently-article__link"
                   >Работа в Google: собеседования и...</a
                 >
               </h3>
@@ -994,7 +994,7 @@
             />
             <div class="recently-article__wrapper">
               <h3 class="recently-article__title">
-                <a href="#" class="recently-article__link"
+                <a href="article.php" class="recently-article__link"
                   >Переезд в Нью Йорк для работы по...</a
                 >
               </h3>
@@ -1016,7 +1016,7 @@
             />
             <div class="recently-article__wrapper">
               <h3 class="recently-article__title">
-                <a href="#" class="recently-article__link"
+                <a href="article.php" class="recently-article__link"
                   >Почему родители против того, чтобы...</a
                 >
               </h3>
@@ -1038,7 +1038,7 @@
             />
             <div class="recently-article__wrapper">
               <h3 class="recently-article__title">
-                <a href="#" class="recently-article__link"
+                <a href="article.php" class="recently-article__link"
                   >Прокрастинация: побороть отклады...</a
                 >
               </h3>
@@ -1060,7 +1060,7 @@
             />
             <div class="recently-article__wrapper">
               <h3 class="recently-article__title">
-                <a href="#" class="recently-article__link"
+                <a href="article.php" class="recently-article__link"
                   >Правки от заказчика могут быть...</a
                 >
               </h3>
@@ -1071,7 +1071,7 @@
           <!-- /.recently-published__article recently-article recently-article-7 -->
         </div>
         <!-- /.recently-published__wrapper -->
-        <a href="#" class="recently-published__link">Read more</a>
+        <a href="article.php" class="recently-published__link">Read more</a>
       </section>
       <!-- /.recently-published -->
     </div>
@@ -1103,7 +1103,7 @@
                   Выбор читателей: где удобнее работать фрилансеру
                 </h1>
                 <!-- /.articles-slider__title -->
-                <button class="articles-slider__btn">
+                <a href="article.php" class="articles-slider__btn">
                   <img
                     src="img/icon-image.svg"
                     alt="Иконка: Изображение"
@@ -1114,7 +1114,7 @@
                     >26</span
                   >
                   <!-- /.articles-slider__number -->
-                </button>
+                </a>
                 <!-- /.articles-slider__btn -->
               </div>
               <!-- /.articles-slider__wrapper -->
@@ -1143,7 +1143,7 @@
                   Выбор читателей: где удобнее работать фрилансеру
                 </h1>
                 <!-- /.articles-slider__title -->
-                <button class="articles-slider__btn">
+                <a href="article.php" class="articles-slider__btn">
                   <img
                     src="img/icon-image.svg"
                     alt="Иконка: Изображение"
@@ -1154,7 +1154,7 @@
                     >26</span
                   >
                   <!-- /.articles-slider__number -->
-                </button>
+                </a>
                 <!-- /.articles-slider__btn -->
               </div>
               <!-- /.articles-slider__wrapper -->
@@ -1183,7 +1183,7 @@
                   Выбор читателей: где удобнее работать фрилансеру
                 </h1>
                 <!-- /.articles-slider__title -->
-                <button class="articles-slider__btn">
+                <a href="article.php" class="articles-slider__btn">
                   <img
                     src="img/icon-image.svg"
                     alt="Иконка: Изображение"
@@ -1194,7 +1194,7 @@
                     >26</span
                   >
                   <!-- /.articles-slider__number -->
-                </button>
+                </a>
                 <!-- /.articles-slider__btn -->
               </div>
               <!-- /.articles-slider__wrapper -->
@@ -1223,7 +1223,7 @@
                   Выбор читателей: где удобнее работать фрилансеру
                 </h1>
                 <!-- /.articles-slider__title -->
-                <button class="articles-slider__btn">
+                <a href="article.php" class="articles-slider__btn">
                   <img
                     src="img/icon-image.svg"
                     alt="Иконка: Изображение"
@@ -1234,7 +1234,7 @@
                     >26</span
                   >
                   <!-- /.articles-slider__number -->
-                </button>
+                </a>
                 <!-- /.articles-slider__btn -->
               </div>
               <!-- /.articles-slider__wrapper -->
@@ -1263,7 +1263,7 @@
                   Выбор читателей: где удобнее работать фрилансеру
                 </h1>
                 <!-- /.articles-slider__title -->
-                <button class="articles-slider__btn">
+                <a href="article.php" class="articles-slider__btn">
                   <img
                     src="img/icon-image.svg"
                     alt="Иконка: Изображение"
@@ -1274,7 +1274,7 @@
                     >26</span
                   >
                   <!-- /.articles-slider__number -->
-                </button>
+                </a>
                 <!-- /.articles-slider__btn -->
               </div>
               <!-- /.articles-slider__wrapper -->
@@ -1308,7 +1308,7 @@
           </div>
           <!-- /.slider-section__main-card -->
           <div class="slider-section__eyes charging-eyes">
-            <a href="#" class="charging-eyes__link">
+            <a href="article.php" class="charging-eyes__link">
               <div class="charging-eyes__wrapper">
                 <h3 class="charging-eyes__title">Зарядка для глаз</h3>
                 <p class="charging-eyes__text">
@@ -1322,7 +1322,7 @@
           </div>
           <!-- /.slider-section__eyes charging-eyes -->
           <div class="slider-section__plugins jquery-plagins">
-            <a href="#" class="jquery-plagins__link">
+            <a href="article.php" class="jquery-plagins__link">
               <div class="jquery-plagins__wrapper">
                 <h3 class="jquery-plagins__title">Топ плагинов jQuery</h3>
                 <p class="jquery-plagins__text">
@@ -1550,22 +1550,25 @@
         <a href="#" class="modal__close">
           <img src="img/close.svg" alt="Кнопка закрытия">
         </a>
-        <form class="modal-form modal__form" action="send.php">
+        <form class="modal-form modal__form" action="send.php" method="POST">
             <h2 class="modal__title">Обратная связь</h2>
             <h3 class="modal__input-title">Тема</h3>
-            <select class="modal__input modal__select modal-select" required>
-              <option class="modal-select__item modal-select__placeholder" value="" hidden>Выберите тему</option>
-              <option class="modal-select__item" value="html">HTML</option>
-              <option class="modal-select__item" value="css">CSS</option>
-              <option class="modal-select__item" value="javascript">JavaScript</option>
-              <option class="modal-select__item" value="jquery">JQuery</option>
-            </select>
+            <div class="modal__select-wrapper">
+              <select class="modal__input modal__select modal-select"  name="topic" required>
+                <option class="modal-select__item modal-select__placeholder" value="" hidden>Выберите тему</option>
+                <option class="modal-select__item" value="html">HTML</option>
+                <option class="modal-select__item" value="css">CSS</option>
+                <option class="modal-select__item" value="javascript">JavaScript</option>
+                <option class="modal-select__item" value="jquery">JQuery</option>
+              </select>
+            </div>
+            <!-- /.modal__select-wrapper -->
             <h3 class="modal__input-title">Сообщение</h3>
-            <textarea class="modal__input modal__message" name="message"></textarea>
+            <textarea class="modal__input modal__message" name="message" name="message" required></textarea>
             <h3 class="modal__input-title">Email</h3>
-            <input class="modal__input" type="email">
+            <input class="modal__input" type="email" name="email" required>
             <div class="modal__checkbox-container">
-              <input class="modal__checkbox-check custom-checkbox" type="checkbox" name="checkbox" id="modal__checkbox" value="agree">
+              <input class="modal__checkbox-check custom-checkbox" type="checkbox" name="checkbox" id="modal__checkbox" value="agree" required>
               <label class="modal__checkbox-text" for="modal__checkbox">Согласен с обработкой данных</label>
             </div>
             <!-- /.form__checkbox-container -->

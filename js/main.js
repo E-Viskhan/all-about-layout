@@ -46,31 +46,45 @@ $(function () {
   var modalCloseBtn = $('.modal__close')
   modalOpenBtn.on('click', openModal)
   modalCloseBtn.on('click', closeModal)
-  function openModal(event) {
-    console.log($(this).attr('data-toggle'));
+  function openModal() {
     var modalOverlay = $('.modal__overlay')
     var modalDialog = $('.modal__dialog')
     modalOverlay.addClass('modal__overlay--visible')
     modalDialog.addClass('modal__dialog--visible')
+    $(document).on('keydown', function (event) {
+      if (event.code === 'Escape') {
+        closeModal()
+      }
+    })
+    $(document).on('click', function (event) {
+      if ($(event.target).is('.modal__overlay')) {
+        closeModal()
+      }
+    })
+    $(window).on('scroll', () => {
+      window.scrollTo(0, 0);
+    });
   }
   function closeModal(event) {
-    event.preventDefault()
+    if (event)
+      event.preventDefault()
     var modalOverlay = $('.modal__overlay')
     var modalDialog = $('.modal__dialog')
     modalOverlay.removeClass('modal__overlay--visible')
     modalDialog.removeClass('modal__dialog--visible')
+    $(window).off('scroll')
   }
 
   // Конец кода модального окна
 
   // Плавная прокрутка по якорным ссылка
-  // var $page = $('html, body');
-  // $('a[href*="#"]').on("click", function () {
-  //   $page.animate({
-  //     scrollTop: $($.attr(this, 'href')).offset().top
-  //   }, 800);
-  //   return false;
-  // });
+  var $page = $('html, body');
+  $('a[href*="#"]').on("click", function () {
+    $page.animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 800);
+    return false;
+  });
   // Конец плавной прокрутки по якорным ссылкам
 
 });

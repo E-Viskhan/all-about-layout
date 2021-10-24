@@ -52,12 +52,28 @@
     font-size: 20px
     line-height: 25px
   &-select
+    width: 100%
     color: $grey-for-numbers
+    appearance: none
     &__item
       color: $grid-text
     &__placeholder
+  &__select
+    &-wrapper
+      position: relative
+      flex-basis: 100%
+      &::after
+        content: ""
+        width: 10px
+        height: 10px
+        position: absolute
+        top: 15px
+        right: 15px
+        background-image: url("../img/select-arrow.svg")
+        background-repeat: no-repeat
+        background-position: center center
   &__input
-    padding: 9px 14px
+    padding: 9px 11px
     height: 40px
     margin-bottom: 15px
     flex-basis: 100%
