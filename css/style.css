@@ -471,6 +471,10 @@ a {
   transition: width .3s;
 }
 
+.header-nav__link--grey {
+  color: #939699;
+}
+
 .header__request-btn {
   width: 261px;
   padding: 9px 0 10px 0;
@@ -516,6 +520,10 @@ a {
   width: 100%;
   height: 2px;
   background-color: #ffffff;
+}
+
+.header-burger__line--black {
+  background-color: #000;
 }
 
 .header-burger--mobile-visible {

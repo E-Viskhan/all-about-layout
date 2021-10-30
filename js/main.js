@@ -77,6 +77,28 @@ $(function () {
 
   // Конец кода модального окна
 
+  // Начало кода для изменении хедера в зависимости от открытого адреса
+  var windowPath = window.location.pathname;
+  var header = $('#header');
+  var headerLogo = $('#header-logo');
+  var headerNavLink = $('.header-nav__link');
+  var headerBurgerLine = $('.header-burger__line');
+  if (windowPath == "/" || windowPath == "/universal/" || windowPath == "/index.php" || windowPath == "/universal/index.php") {
+    header.addClass('header-main')
+  }
+  else {
+    header.addClass('header-article')
+    headerLogo.attr('src', 'img/header-logo-other-pages.svg')
+    headerNavLink.each(function () {
+      $(this).addClass('header-nav__link--grey')
+    });
+    headerBurgerLine.each(function () {
+      $(this).addClass('header-burger__line--black')
+    });
+  }
+
+  // Конец кода для изменения хедера
+
   // Плавная прокрутка по якорным ссылка
   var $page = $('html, body');
   $('a[href*="#"]').on("click", function () {
