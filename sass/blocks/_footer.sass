@@ -3,7 +3,7 @@
   &__wrapper
     padding: 60px 0 55px 0
   &__top
-    margin-bottom: 70px
+    margin-bottom: 57px
     margin-top: 3px
     display: flex
     flex-direction: column
@@ -12,8 +12,15 @@
     @include h1-title
     margin-bottom: 25px
   &-form
+    width: 459px
+    height: 53px
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
     &__input
       @include card-text($color: $grey-for-numbers)
+      margin-right: 10px
+      margin-bottom: 5px
       width: 313px
       height: 40px
       padding: 10px 15px 10px 15px
@@ -139,3 +146,6 @@
       padding: 0
       margin: 0
       max-width: 750px
+#email-error
+  order: 2
+  flex-basis: 100%

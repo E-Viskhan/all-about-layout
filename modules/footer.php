@@ -3,11 +3,13 @@
         <div class="footer__wrapper">
           <div class="footer__top footer-top">
             <h1 class="footer__title">Подпишитесь на нашу рассылку</h1>
-            <form action="#" class="footer__form footer-form">
+            <form action="send.php" class="footer__form footer-form">
               <input
                 type="search"
+                name="email"
                 class="footer-form__input"
                 placeholder="Email"
+                required
               />
               <button type="submit" class="footer-form__btn">
                 Подписаться

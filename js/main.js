@@ -100,6 +100,17 @@ $(function () {
 
   // Конец кода модального окна
 
+  // Начало кода для валидации формы подписки в футере
+  $(".footer__form").validate({
+    "messages": {
+      "email": {
+        required: "Пожалуйста, введите email",
+        email: "Email должен быть в формате name@domain.com"
+      },
+    },
+  });
+  // Конец кода для валидации формы подписки в футере
+
   // Начало кода для изменении хедера в зависимости от открытого адреса
   var windowPath = window.location.pathname;
   var header = $('#header');
