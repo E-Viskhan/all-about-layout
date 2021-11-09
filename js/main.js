@@ -75,6 +75,34 @@ $(function () {
     $(window).off('scroll')
   }
 
+  $('#modal-form').validate({
+    "messages": {
+      "topic": {
+        required: "Пожалуйста, выберите тему",
+
+      },
+      "message": {
+        required: "Пожалуйста, введите сообщение",
+      },
+      "email": {
+        required: "Пожалуйста, введите email",
+        email: "Email должен быть в формате name@domain.com"
+      },
+      "checkbox": {
+        required: "Пожалуйста, нажмите на галочку"
+      },
+    },
+    "rules": {
+      name: {
+        minlength: 2,
+        maxlength: 20
+      },
+      phone: {
+        minlength: 16,
+      },
+    },
+  });
+
   // Конец кода модального окна
 
   // Начало кода для изменении хедера в зависимости от открытого адреса

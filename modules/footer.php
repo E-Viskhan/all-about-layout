@@ -207,7 +207,7 @@
         <a href="#" class="modal__close">
           <img src="img/close.svg" alt="Кнопка закрытия">
         </a>
-        <form class="modal-form modal__form" action="send.php" method="POST">
+        <form id="modal-form" class="modal-form modal__form" action="send.php" method="POST">
             <h2 class="modal__title">Обратная связь</h2>
             <h3 class="modal__input-title">Тема</h3>
             <div class="modal__select-wrapper">
@@ -221,9 +221,15 @@
             </div>
             <!-- /.modal__select-wrapper -->
             <h3 class="modal__input-title">Сообщение</h3>
-            <textarea class="modal__input modal__message" name="message" name="message" required></textarea>
+            <div class="modal__message-wrapper">
+              <textarea class="modal__input modal__message" name="message" required></textarea>
+            </div>
+            <!-- /.modal__message-wrapper -->
             <h3 class="modal__input-title">Email</h3>
-            <input class="modal__input" type="email" name="email" required>
+            <div class="modal__email-wrapper">
+              <input class="modal__input" type="email" name="email" required>
+            </div>
+            <!-- /.modal__email-wrapper -->
             <div class="modal__checkbox-container">
               <input class="modal__checkbox-check custom-checkbox" type="checkbox" name="checkbox" id="modal__checkbox" value="agree" required>
               <label class="modal__checkbox-text" for="modal__checkbox">Согласен с обработкой данных</label>
@@ -236,6 +242,7 @@
     </div>
     <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>
