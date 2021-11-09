@@ -137,7 +137,7 @@
                     <a href="#" class="footer-main-nav__link">Реклама</a>
                   </li>
                   <li class="footer-main-nav__item">
-                    <a href="#" class="footer-main-nav__link">Обратная связь</a>
+                    <a href="#" class="footer-main-nav__link" data-toggle=modal>Обратная связь</a>
                   </li>
                 </ul>
               </div>

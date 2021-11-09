@@ -46,7 +46,11 @@ $(function () {
   var modalCloseBtn = $('.modal__close')
   modalOpenBtn.on('click', openModal)
   modalCloseBtn.on('click', closeModal)
-  function openModal() {
+  function openModal(event) {
+    if (event)
+      event.preventDefault()
+    var scrollXNow = window.scrollX
+    var scrollYNow = window.scrollY
     var modalOverlay = $('.modal__overlay')
     var modalDialog = $('.modal__dialog')
     modalOverlay.addClass('modal__overlay--visible')
@@ -62,7 +66,7 @@ $(function () {
       }
     })
     $(window).on('scroll', () => {
-      window.scrollTo(0, 0);
+      window.scrollTo(scrollXNow, scrollYNow);
     });
   }
   function closeModal(event) {
@@ -92,15 +96,6 @@ $(function () {
         required: "Пожалуйста, нажмите на галочку"
       },
     },
-    "rules": {
-      name: {
-        minlength: 2,
-        maxlength: 20
-      },
-      phone: {
-        minlength: 16,
-      },
-    },
   });
 
   // Конец кода модального окна
@@ -127,7 +122,7 @@ $(function () {
 
   // Конец кода для изменения хедера
 
-  // Плавная прокрутка по якорным ссылка
+  // Плавная прокрутка по якорным ссылкам
   var $page = $('html, body');
   $('a[href*="#"]').on("click", function () {
     $page.animate({
