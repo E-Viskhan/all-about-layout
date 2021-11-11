@@ -412,6 +412,11 @@
       flex-direction: column
       &__text
         margin-bottom: 30px
+  .error-404
+    &__number
+      font-size: 150px
+    &__not-find
+      font-size: 30px
 @media(max-width: 768px)
   .container
     width: 92%
@@ -766,7 +771,13 @@
       &__logo
         &-link
           margin-bottom: 30px
-
+  .error-404
+    &__number
+      font-size: 100px
+    &__not-find
+      font-size: 24px
+    &__text
+      font-size: 16px
 @media(max-width: 480px)
   .tabs
     background: linear-gradient(to bottom, #262D33 52%, #EDEFF0 48%)
@@ -808,6 +819,8 @@
       display: flex
       flex-direction: column
       width: 100%
+      align-items: stretch
+      flex-wrap: nowrap
       &__input
         width: 100%
         margin-bottom: 15px
@@ -816,6 +829,16 @@
   .modal
     &__dialog
       width: 95%
+  .error-404
+    &__number
+      font-size: 100px
+    &__not-find
+      font-size: 24px
+    &__text
+      font-size: 14px
+  .footer-form__input + #email-error
+    bottom: 42px
+    left: 5px
 @media(max-width: 320px)
   .tabs
     background: linear-gradient(to bottom, #262D33 40%, #EDEFF0 60%)

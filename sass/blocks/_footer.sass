@@ -12,8 +12,9 @@
     @include h1-title
     margin-bottom: 25px
   &-form
-    width: 459px
-    height: 53px
+    position: relative
+    max-width: 459px
+    min-height: 53px
     display: flex
     align-items: flex-start
     flex-wrap: wrap
@@ -146,6 +147,6 @@
       padding: 0
       margin: 0
       max-width: 750px
-#email-error
-  order: 2
-  flex-basis: 100%
+.footer-form__input + #email-error
+  position: absolute
+  bottom: 0px

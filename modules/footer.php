@@ -5,7 +5,7 @@
             <h1 class="footer__title">Подпишитесь на нашу рассылку</h1>
             <form action="send.php" class="footer__form footer-form">
               <input
-                type="search"
+                type="email"
                 name="email"
                 class="footer-form__input"
                 placeholder="Email"
