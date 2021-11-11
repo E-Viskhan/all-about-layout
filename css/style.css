@@ -2116,10 +2116,13 @@ a {
 .articles-slider__btn {
   margin: 0 auto;
   padding: 10px 20px;
+  max-width: 194px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 194px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .articles-slider__icon {
