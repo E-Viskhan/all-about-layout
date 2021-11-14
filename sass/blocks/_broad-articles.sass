@@ -24,12 +24,7 @@
       top: 1px
       fill: $icon-fill
       cursor: pointer
-      transform: none
-      transition: all 300ms ease
-      &--active
-        fill: $template-red
-      &:hover
-        transform: scale(1.3)
+      @include common-styles-for-favorite
     &__topic
       font-family: "Lato-Black"
       font-style: normal

@@ -89,3 +89,10 @@
   color: $title-color
 @mixin footer-navlist-border($color: $template-red)
   border-top: 5px solid $color
+@mixin common-styles-for-favorite()
+  transform: none
+  transition: all 300ms ease
+  &--active
+    fill: $template-red
+  &:hover
+    transform: scale(1.3)

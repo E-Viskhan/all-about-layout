@@ -22,7 +22,6 @@ $(function () {
   favoriteBtn.on('click', function () {
     $(this).toggleClass('broad-article__favorite--active')
   })
-
   // Начало кода слайдера
   // Инициализация слайдера slick
   $('.articles-slider').slick({
@@ -168,6 +167,12 @@ $(function () {
     });
   });
   // Конец кода для стрелки вверх
+
+  // Код для флажка избранное на странице статьи
+  var favoriteBtn = $('.article-main__favorite');
+  favoriteBtn.on('click', function () {
+    $(this).toggleClass('article-main__favorite--active')
+  })
 
   // Плавная прокрутка по якорным ссылкам
   var $page = $('html, body');

@@ -50,8 +50,8 @@
       height: 27px
       opacity: 0.4
       cursor: pointer
-      &-path
-        fill: $light
+      fill: $light
+      @include common-styles-for-favorite
   &__main
     position: relative
   &-nav
@@ -63,8 +63,8 @@
       margin-right: 30px
       padding-left: 25px
       &::before
-        width: 18px
-        height: 17px
+        width: 20px
+        height: 20px
     &__back
       @include icon-before($image: '../img/arrow.svg')
       margin-right: 20px

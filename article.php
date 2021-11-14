@@ -5,6 +5,8 @@
       <svg
       class="article-main__favorite"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMinYMin meet"
+      viewBox="0 0 21 27"
       >
         <path
           class="article-main__favorite-path"
@@ -28,7 +30,7 @@
         </ul>
       </div>
       <!-- /.article-main__top -->
-      <h1 class="article-top__title">Новый налоговый режим<br> для фрилансеров — налог<br> на проф. доход</h1>
+      <h1 class="article-top__title">Новый налоговый режим<br class="article-main__br"> для фрилансеров — налог<br class="article-main__br"> на проф. доход</h1>
       <p class="article-top__text">Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.</p>
       <div class="article-main__info">
         <span class="article-main__date">6 августа, 10:30</span>
