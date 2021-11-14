@@ -24,7 +24,7 @@
         "../sass/_error-404.sass",
         "../sass/articles/_articles-styles.sass",
         "../sass/articles/article-1/_article-1-styles.sass",
-        "../sass/articles/article-1/blocks/_article-top.sass",
+        "../sass/articles/article-1/blocks/_article-main.sass",
         "../sass/_media.sass"
     ],
     "names": [],
