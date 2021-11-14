@@ -1,0 +1,104 @@
+.article
+  &-main
+    background-image: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url('../img/article-page__main-img.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    &__wrapper
+      padding: 60px 97px 72px 97px
+      position: relative
+    &__top
+      margin-bottom: 50px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      font-family: "Lato-Black"
+      @include card-date()
+    &__nav
+      padding: 0
+      margin: 0
+      display: flex
+      list-style: none
+    &__topic
+      color: $blue
+      text-transform: uppercase
+      letter-spacing: 0.5px
+    &__info
+      display: flex
+      align-items: center
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      opacity: 0.85
+    &__date
+      margin-right: 20px
+      @include icon-before($image: '../img/clock.svg')
+      opacity: 0.85
+    &__likes
+      margin-right: 20px
+      @include icon-before($image: '../img/heart.svg')
+      opacity: 0.85
+    &__comments
+      @include icon-before($image: '../img/comment.svg')
+      opacity: 0.85
+    &__favorite
+      position: absolute
+      top: 151px
+      left: 5px
+      width: 21px
+      height: 27px
+      opacity: 0.4
+      cursor: pointer
+      &-path
+        fill: $light
+  &__main
+    position: relative
+  &-nav
+    font-style: normal
+    font-size: 14px
+    line-height: 20px
+    &__index
+      @include icon-before($image: '../img/home.svg')
+      margin-right: 30px
+      padding-left: 25px
+      &::before
+        width: 18px
+        height: 17px
+    &__back
+      @include icon-before($image: '../img/arrow.svg')
+      margin-right: 20px
+      padding-left: 25px
+      &::before
+        width: 15px
+        height: 7px
+    &__forward
+      @include icon-before($image: '../img/arrow.svg')
+      padding-left: 0
+      padding-right: 25px
+      &::before
+        width: 15px
+        height: 7px
+        left: auto
+        right: 0
+        transform: translateY(-50%) rotate(180deg)
+    &__link
+      color: $light
+  &-top
+    &__title
+      margin: 0 0 30px 0
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 55px
+      line-height: 70px
+      color: $light
+    &__text
+      margin-bottom: 43px
+      max-width: 632px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 30px
+      color: $light
+      opacity: 0.85

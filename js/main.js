@@ -1,5 +1,5 @@
 $(function () {
-  // Начало кода для табой
+  // Начало кода для табов
   var tabItems = $('.tabs-list__item');
   var contentItems = $('.tabs-content__item');
 
