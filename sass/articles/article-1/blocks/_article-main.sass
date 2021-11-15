@@ -52,6 +52,11 @@
       cursor: pointer
       fill: $light
       @include common-styles-for-favorite
+    &__author
+      position: absolute
+      bottom: -197px
+      right: 97px
+      z-index: 2
   &__main
     position: relative
   &-nav
@@ -102,3 +107,49 @@
       line-height: 30px
       color: $light
       opacity: 0.85
+  &-author
+    min-width: 263px
+    background: $light
+    border: 1px solid #D9DADB
+    border-radius: 10px
+    &__wrapper
+      padding: 35px 25px 0 25px
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__img
+      margin-bottom: 15px
+      width: 90px
+      height: 90px
+      object-fit: cover
+      border-radius: 50%
+    &__name
+      margin-bottom: 5px
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: $title-color
+    &__work
+      margin-bottom: 15px
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+    &__articles
+      margin-bottom: 20px
+      font-family: 'Lato-Black'
+      font-style: normal
+      font-size: 14px
+      line-height: 20px
+      color: $title-color
+    &__link
+      display: flex
+      justify-content: center
+      padding: 15px 0
+      font-family: "Lato-Black"
+      font-style: normal
+      font-size: 14px
+      line-height: 20px
+      color: $title-color
+      border-top: 1px solid #D9DADB

@@ -38,6 +38,17 @@
         <span class="article-main__comments">19</span>
       </div>
       <!-- /.article-main__info -->
+      <div class="article-main__author article-author">
+        <div class="article-author__wrapper">
+          <img src="img/article-author__img.png" alt="Фото: Автор статьи" class="article-author__img">
+          <span class="article-author__name">Мира Стахова</span>
+          <span class="article-author__work">Фрилансер</span>
+          <span class="article-author__articles">82 статьи</span>
+        </div>
+        <!-- /.article-author__wrapper -->
+        <a href="#" class="article-author__link">Страница автора</a>
+      </div>
+      <!-- /.article-main__author article-author -->
     </div>
     <!-- /.article-main__wrapper -->
   </div>
