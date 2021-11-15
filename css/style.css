@@ -3491,15 +3491,12 @@ a {
 
 .article-content__text {
   margin: 0;
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   color: #4B5157;
-}
-
-.article-content__text:not(:first-child) {
-  margin-bottom: 15px;
 }
 
 .article-content__first-text {
