@@ -72,11 +72,60 @@
       <p class="article-content__text">
         Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, 
       </p>
-      <p class="article-content__text">
+      <p class="article-content__text article-content__text--mb60">
         Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации 
       </p>
     </div>
     <!-- /.article-content__container -->
+    <!-- Slider main container -->
+    <div class="swiper article-content__slider article-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="article-slider__item">
+            <img src="img/slider-img-1.png" alt="Фото: Природа" class="article-slider__img">
+            <div class="article-slider__info">
+              <p class="article-slider__text">Geostatistics deal with quantitative data analysis, specifically the application of statistical methodology</p>
+              <div class="article-slider__author">
+                <img src="img/article-slider-author-img.png" alt="Фото: Автор фотографии" class="article-slider__author-img">
+                <div class="article-slider__author-info">
+                  <span class="article-slider__author-name">Андрей Вашигаев</span>
+                  <span class="article-slider__author-work">Фотограф</span>
+                </div>
+                <!-- /.article-slider__author-info -->
+              </div>
+              <!-- /.article-slider__author -->
+            </div>
+            <!-- /.article-slider__desc -->
+          </div>
+          <!-- /.article-slider__item -->
+        </div>
+        <!-- /.swiper-slide -->
+        <div class="swiper-slide">
+          <div class="article-slider__item">
+            <img src="img/slider-img-2.jpg" alt="Фото: Природа" class="article-slider__img">
+            <div class="article-slider__info">
+              <p class="article-slider__text">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.</p>
+              <div class="article-slider__author">
+                <img src="img/article-slider-author-img-2.png" alt="Фото: Автор фотографии" class="article-slider__author-img">
+                <div class="article-slider__author-info">
+                  <span class="article-slider__author-name">Сергей Андреев</span>
+                  <span class="article-slider__author-work">Фотограф</span>
+                </div>
+                <!-- /.article-slider__author-info -->
+              </div>
+              <!-- /.article-slider__author -->
+            </div>
+            <!-- /.article-slider__desc -->
+          </div>
+          <!-- /.article-slider__item -->
+        </div>
+        <!-- /.swiper-slide -->
+      </div>
+      <!-- /.swiper-wrapper -->
+      <div class="article-slider__prev article-slider__nav"></div>
+      <div class="article-slider__next article-slider__nav"></div>
+    </div>
+    <!-- /.article-slider -->
   </div>
   <!-- /.container -->
 </section>

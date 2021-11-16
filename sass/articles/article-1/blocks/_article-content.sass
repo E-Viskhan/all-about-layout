@@ -1,9 +1,9 @@
 .article
   &-content
+    padding-top: 60px
+    padding-bottom: 90px
     background-color: $light
     &__container
-      padding-top: 60px
-      padding-bottom: 90px
       margin-left: 97px
       margin-right: 60px
       max-width: 622px
@@ -15,6 +15,8 @@
       font-size: 18px
       line-height: 30px
       color: $grid-text
+      &--mb60
+        margin-bottom: 60px
     &__first-text
       margin: 0
       margin-bottom: 45px
@@ -41,3 +43,63 @@
       font-size: 25px
       line-height: 30px
       color: $title-color
+  &-slider
+    &__item
+      border-radius: 10px
+      overflow: hidden
+    &__img
+      display: flex
+      width: 100%
+      height: 555px
+      object-fit: cover
+    &__info
+      border: 1px solid $line-color
+      border-radius: 10px
+      border-top: 0
+      display: flex
+      align-items: center
+    &__text
+      flex-basis: 77%
+      padding: 25px 35px
+      margin: 0
+      font-size: 14px
+      line-height: 20px
+      color: $grid-text
+      border-right: 1px solid $line-color
+    &__author
+      padding: 12px 35px 13px 30px
+      display: flex
+      align-items: center
+      &-img
+        margin-right: 10px
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        object-fit: cover
+      &-info
+        display: flex
+        flex-direction: column
+      &-name
+        margin-bottom: 2px
+        font-size: 14px
+        line-height: 20px
+        color: $grid-text
+      &-work
+        font-size: 12px
+        line-height: 15px
+        color: $grey-for-numbers
+    &__nav
+      width: 60px
+      height: 60px
+      position: absolute
+      top: 40%
+      z-index: 100
+      background-image: url('../img/slider-arrow.svg')
+      background-repeat: no-repeat
+      background-size: cover
+      cursor: pointer
+    &__prev
+      left: 35px
+    &__next
+      transform: rotate(180deg)
+      right: 35px

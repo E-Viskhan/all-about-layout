@@ -172,7 +172,18 @@ $(function () {
   var favoriteBtn = $('.article-main__favorite');
   favoriteBtn.on('click', function () {
     $(this).toggleClass('article-main__favorite--active')
-  })
+  });
+
+  // Код для слайдера на странице статьи
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    // Стрелки навигации
+    navigation: {
+      nextEl: '.article-slider__next',
+      prevEl: '.article-slider__prev',
+    },
+  });
+
 
   // Плавная прокрутка по якорным ссылкам
   var $page = $('html, body');
