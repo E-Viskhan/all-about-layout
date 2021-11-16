@@ -41,9 +41,12 @@
       <div class="article-main__author article-author">
         <div class="article-author__wrapper">
           <img src="img/article-author__img.png" alt="Фото: Автор статьи" class="article-author__img">
-          <span class="article-author__name">Мира Стахова</span>
-          <span class="article-author__work">Фрилансер</span>
-          <span class="article-author__articles">82 статьи</span>
+          <div class="article-author__info">
+            <span class="article-author__name">Мира Стахова</span>
+            <span class="article-author__work">Фрилансер</span>
+            <span class="article-author__articles">82 статьи</span>
+          </div>
+          <!-- /.article-author__info -->
         </div>
         <!-- /.article-author__wrapper -->
         <a href="#" class="article-author__link">Страница автора</a>

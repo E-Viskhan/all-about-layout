@@ -142,6 +142,12 @@
   .footer
     &-nav
       grid-template-columns: repeat(6, 1fr)
+  .article
+    &-main
+      &__author
+        right: 0
+    &-author
+      min-width: auto
 @media(max-width: 992px)
   .container
     max-width: 700px
@@ -428,12 +434,31 @@
           transform: none
       &__br
         display: none
+      &__author
+        bottom: -50px
     &-top
       &__title
         font-size: 40px
         line-height: 50px
     &-author
-      min-width: auto
+      &__wrapper
+        padding: 15px 10px 0 10px
+        flex-direction: row
+      &__info
+        align-items: flex-start
+      &__link
+        padding: 10px 0
+      &__img
+        margin-right: 15px
+        width: 75px
+        height: 75px
+      &__name
+        font-size: 18px
+        line-height: 22px
+      &__work
+        margin-bottom: 10px
+      &__articles
+        margin-bottom: 15px
     &-content
       &__br
         display: none
@@ -819,6 +844,10 @@
       &__nav
         flex-basis: 100%
         justify-content: space-between
+      &__author
+        bottom: -105px
+        right: 50%
+        transform: translateX(50%)
     &-top
       flex-wrap: wrap
       &__title
@@ -828,6 +857,14 @@
       &__text
         font-size: 16px
         line-height: 25px
+    &-content
+      &__container
+        padding-top: 130px
+        margin: 0
+    &-author
+      min-width: 80%
+      &__wrapper
+        justify-content: center
 @media(max-width: 480px)
   .tabs
     background: linear-gradient(to bottom, #262D33 52%, #EDEFF0 48%)
@@ -907,6 +944,11 @@
         margin-right: 22px
       &__back
         margin-right: 15px
+    &-author
+      &__name
+        font-size: 16px
+      &__work, &__articles
+        font-size: 13px
 @media(max-width: 320px)
   .tabs
     background: linear-gradient(to bottom, #262D33 40%, #EDEFF0 60%)
