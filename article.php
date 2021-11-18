@@ -126,6 +126,84 @@
       <div class="article-slider__next article-slider__nav"></div>
     </div>
     <!-- /.article-slider -->
+    <div class="article-content__wrapper">
+      <div class="article-content__container">
+        <p class="article-content__text">
+          Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
+        </p>
+        <p class="article-content__text">
+          Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации 
+        </p>
+        <p class="article-content__text article-content__text--mb">
+          Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Таким образом консультация с широким активом способствует подготовки и реализации направлений 
+        </p>
+      </div>
+      <!-- /.article-content__container -->
+      <div class="article-content__material material-topic">
+        <h2 class="material-topic__name">Материал по теме</h2>
+        <img src="img/material-topic.png" alt="Фото: Материал по теме" class="material-topic__img">
+        <div class="material-topic__wrapper">
+          <h3 class="material-topic__title">20+ инструментов<br class="material-topic__br"> для js-разработчика</h3>
+          <p class="material-topic__text">Узнайте, какими инструментами вы еще не пользовались, а могли бы. Эти инструменты помогут вам ускорить свою работу или повысить ее качество. Все инструменты собраны в виде...</p>
+          <div class="material-topic__info">
+            <span class="material-topic__watches">1,623</span>
+            <span class="material-topic__comments">102</span>
+          </div>
+          <!-- /.material-topic__info -->
+        </div>
+        <!-- /.material-topic__wrapper -->
+      </div>
+      <!-- /.article-content__material material-topic-->
+    </div>
+    <!-- /.article-content__wrapper -->
+    <div class="article-content__container article-content__container--mb45">
+      <p class="article-content__strong-text">
+        Таким образом консультация с широким активом способствует подготовки и реализации направлений прогрессивного развития. Не следует, однако забывать, что новая модель организационной деятельности в значительной степени обуславливает.
+      </p>
+      <p class="article-content__text">
+        Таким образом консультация с широким активом способствует подготовки и реализации направлений прогрессивного развития. Не следует, однако забывать, что новая модель организационной деятельности в значительной степени обуславливает создание модели развития. Равным образом дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке форм развития. Разнообразный и богатый опыт постоянный количественный 
+      </p>
+      <p class="article-content__text article-content__text--mb45">
+        Задача организации, в особенности же консультация с широким активом требуют от нас анализа новых предложений. Повседневная практика показывает, что постоянный количественный рост и сфера нашей 
+      </p>
+      <div class="article-content__tags tags">
+      <div class="tags__wrapper">
+        <a href="#" class="tags__tag">Travel</a>
+        <a href="#" class="tags__tag">Destinations</a>
+        <a href="#" class="tags__tag">Nature</a>
+        <a href="#" class="tags__tag">World</a>
+        <a href="#" class="tags__tag">Alaska</a>
+      </div>
+      <!-- /.tags__wrapper -->
+    </div>
+    <!-- /.article-content__tags tags -->
+    </div>
+    <!-- /.article-content__container -->
+    <div class="article-content__help repost-help">
+      <div class="repost-help__wrapper">
+        <h3 class="repost-help__title">Поддержите репостом</h3>
+        <div class="repost-help__buttons">
+          <a href="#" class="repost-help__button">
+            <img src="img/repost-heart.svg" alt="Кнопка: Нравится" class="repost-help__icon">
+            <span class="repost-help__text">Like it</span>
+            <span class="repost-help__number">42</span>
+          </a>
+          <a href="#" class="repost-help__button">
+            <img src="img/repost-facebook.svg" alt="Кнопка: Поделиться в Facebook" class="repost-help__icon">
+            <span class="repost-help__text">Share</span>
+            <span class="repost-help__number">80</span>
+          </a>
+          <a href="#" class="repost-help__button">
+            <img src="img/repost-twitter.svg" alt="Кнопка: Поделиться в Twitter" class="repost-help__icon">
+            <span class="repost-help__text">Tweet</span>
+            <span class="repost-help__number">33</span>
+          </a>
+        </div>
+        <!-- /.repost-help__buttons -->
+      </div>
+      <!-- /.repost-help__wrapper -->
+    </div>
+    <!-- /.article-content__help -->
   </div>
   <!-- /.container -->
 </section>

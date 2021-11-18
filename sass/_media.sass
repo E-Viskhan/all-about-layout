@@ -148,6 +148,17 @@
         right: 0
     &-author
       min-width: auto
+    &-slider
+      &__text
+        flex-basis: 75%
+    &-content
+      &__container
+        margin-left: 60px
+      &__help
+        margin-left: 60px
+  .material-topic
+    &__img
+      height: 160px
 @media(max-width: 992px)
   .container
     max-width: 700px
@@ -460,8 +471,54 @@
       &__articles
         margin-bottom: 15px
     &-content
+      &__wrapper
+        flex-wrap: wrap
+      &__container, &__help
+        margin: 0
+        max-width: none
+      &__text
+        &--mb
+          margin-bottom: 30px
       &__br
         display: none
+      &__material
+        margin-top: 0
+    &-slider
+      &__img
+        height: 350px
+      &__text
+        padding-top: 15px
+        padding-bottom: 15px
+        flex-basis: 66%
+      &__nav
+        width: 45px
+        height: 45px
+  .material-topic
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    max-width: none
+    &__wrapper
+      display: flex
+      flex-direction: column
+      flex-basis: 55%
+    &__name
+      flex-basis: 100%
+    &__img
+      margin-bottom: 0
+      width: 40%
+    &__br
+      display: none
+  .tags
+    &__tag
+      &:hover
+        background-color: #ffffff
+        color: #262D33
+  .repost-help
+    &__button
+      &:hover
+        background-color: $blue
 @media(max-width: 768px)
   .container
     width: 92%
@@ -690,6 +747,29 @@
       &__title
         font-size: 30px
         line-height: 45px
+    &-slider
+      &__img
+        height: 300px
+      &__nav
+        top: 33%
+        width: 30px
+        height: 30px
+      &__info
+        flex-wrap: wrap
+      &__text
+        flex-basis: 100%
+        border-right: none
+        border-bottom: 1px solid $line-color
+    &-content
+      &__strong-text
+        font-size: 20px
+        padding: 10px
+        &::before
+          top: -10px
+          left: -10px
+  .material-topic
+    &__img
+      height: 180px
 @media(max-width: 576px)
   .content
     &-article
@@ -859,12 +939,24 @@
         line-height: 25px
     &-content
       padding-top: 130px
-      &__container
-        margin: 0
+      &__wrapper
+        margin-bottom: 60px
     &-author
       min-width: 80%
       &__wrapper
         justify-content: center
+    &-slider
+      &__img
+        height: 270px
+      &__nav
+        top: 28%
+  .material-topic
+    &__img
+      margin-bottom: 10px
+      flex-basis: 100%
+      height: 200px
+    &__wrapper
+      flex-basis: 100%
 @media(max-width: 480px)
   .tabs
     background: linear-gradient(to bottom, #262D33 52%, #EDEFF0 48%)
@@ -949,6 +1041,37 @@
         font-size: 16px
       &__work, &__articles
         font-size: 13px
+    &-slider
+      &__img
+        height: 220px
+      &__text
+        padding: 10px 15px
+        font-size: 13px
+      &__author
+        padding: 10px 15px
+        &-info
+          align-items: center
+          flex-direction: row
+        &-name
+          margin-bottom: 0
+          margin-right: 10px
+      &__prev
+        left: 15px
+      &__next
+        right: 15px
+    &-content
+      &__strong-text
+        font-size: 16px
+  .repost-help
+    &__wrapper
+      display: flex
+      flex-direction: column
+    &__buttons
+      flex-direction: column
+    &__button
+      justify-content: center
+      &:not(:last-child)
+        margin-bottom: 15px
 @media(max-width: 320px)
   .tabs
     background: linear-gradient(to bottom, #262D33 40%, #EDEFF0 60%)
@@ -957,3 +1080,9 @@
       &__img
         height: 190px
         border-radius: 5px
+  .article
+    &-slider
+      &__img
+        height: 180px
+      &__nav
+        top: 24%

@@ -1,8 +1,12 @@
 .article
   &-content
     padding-top: 60px
-    padding-bottom: 90px
+    padding-bottom: 60px
     background-color: $light
+    &__wrapper
+      margin-bottom: 80px
+      display: flex
+      align-items: flex-start
     &__container
       margin-left: 97px
       margin-right: 60px
@@ -15,6 +19,10 @@
       font-size: 18px
       line-height: 30px
       color: $grid-text
+      &--mb, &--mb0
+        margin-bottom: 0
+      &--mb45
+        margin-bottom: 45px
       &--mb60
         margin-bottom: 60px
     &__first-text
@@ -43,9 +51,40 @@
       font-size: 25px
       line-height: 30px
       color: $title-color
+    &__slider
+      margin-bottom: 45px
+    &__material
+      margin-top: 135px
+    &__strong-text
+      margin: 0 0 45px 0
+      position: relative
+      z-index: 1
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      color: $background-dark
+      &::before
+        content: ''
+        z-index: -1
+        width: 70px
+        height: 70px
+        top: -21px
+        left: -20px
+        position: absolute
+        background-image: url("../img/quote.svg")
+        background-repeat: no-repeat
+        opacity: 75%
+    &__tags
+      margin-bottom: 50px
+    &__help
+      margin-left: 100px
+      max-width: 57%
   &-slider
     &__item
-      border-radius: 10px
+      border-top-left-radius: 10px
+      border-top-right-radius: 10px
       overflow: hidden
     &__img
       display: flex
@@ -54,7 +93,8 @@
       object-fit: cover
     &__info
       border: 1px solid $line-color
-      border-radius: 10px
+      border-bottom-left-radius: 10px
+      border-bottom-right-radius: 10px
       border-top: 0
       display: flex
       align-items: center
@@ -103,3 +143,102 @@
     &__next
       transform: rotate(180deg)
       right: 35px
+.material-topic
+  max-width: 263px
+  &__name
+    margin: 0 0 20px 0
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    color: $background-dark
+  &__img
+    display: flex
+    width: 100%
+    height: 180px
+    margin-bottom: 15px
+    border-radius: 10px
+    object-fit: cover
+  &__title
+    margin: 0 0 5px 0
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    color: $background-dark
+  &__text
+    margin: 0 0 20px 0
+    font-size: 14px
+    line-height: 20px
+    color: $grid-text
+  &__info
+    display: flex
+    align-items: center
+    font-size: 12px
+    line-height: 15px
+    color: $grey-for-numbers
+  &__watches
+    @include icon-before($image: '../img/eye.svg')
+    margin-right: 10px
+  &__comments
+    @include icon-before($image: '../img/material-comment.svg')
+.tags
+  &__wrapper
+    display: flex
+    flex-wrap: wrap
+  &__tag
+    margin: 0 10px 10px 0
+    padding: 4px 15px
+    font-family: "Lato-Black"
+    font-style: normal
+    font-size: 14px
+    line-height: 20px
+    color: $title-color
+    border: 1px solid $line-color
+    border-radius: 5px
+    text-decoration: none
+    transition: all 0.3s ease
+    background-color: $light
+    &:hover
+      background-color: $template-green
+      color: $light
+.repost-help
+  &__wrapper
+    border-top: 1px solid $line-color
+    padding: 30px 0
+  &__title
+    margin: 0 0 25px 0
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 25px
+    line-height: 30px
+    color: $title-color
+  &__buttons
+    display: flex
+  &__button
+    margin-right: 14px
+    padding: 10px 20px
+    display: flex
+    align-items: center
+    background-color: $blue
+    border-radius: 20px
+    &:hover
+      background-color: darken($blue, 10%)
+  &__icon
+    margin-right: 8px
+  &__text
+    margin-right: 8px
+    font-family: 'Lato-Black'
+    font-style: normal
+    font-size: 14px
+    line-height: 20px
+    color: $light
+  &__number
+    font-family: 'Lato-Black'
+    font-style: normal
+    font-size: 14px
+    line-height: 20px
+    color: $light

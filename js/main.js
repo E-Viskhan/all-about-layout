@@ -177,6 +177,7 @@ $(function () {
   // Код для слайдера на странице статьи
   const swiper = new Swiper('.swiper', {
     loop: true,
+    slidesPerView: 'auto',
     // Стрелки навигации
     navigation: {
       nextEl: '.article-slider__next',
