@@ -535,6 +535,31 @@
         min-height: 50px
         &:hover
           color: $title-color
+  .load-more, .comments-top__link
+    &:hover
+      background-color: $light
+      color: $background-dark
+  .comments
+    &__wrapper
+      width: 100%
+      margin-left: 0
+    &-top
+      &__title, &__number
+        font-size: 30px
+        line-height: 40px
+    &-form
+      width: 100%
+      &__container
+        width: 70%
+      &__btn
+        &:hover
+          background-color: $blue
+    &__load
+      padding-left: 0
+  .comment
+    &__text
+      &--mb
+        margin-bottom: 15px
 @media(max-width: 768px)
   .container
     width: 92%
@@ -777,6 +802,7 @@
         border-right: none
         border-bottom: 1px solid $line-color
     &-content
+      padding-bottom: 40px
       &__strong-text
         font-size: 20px
         padding: 10px
@@ -786,6 +812,16 @@
   .material-topic
     &__img
       height: 180px
+  .article
+    &-cards
+      &__wrapper
+        padding: 40px 0
+  .comments
+    &__wrapper
+      padding-top: 40px
+  .footer
+    &__wrapper
+      padding-top: 40px
 @media(max-width: 576px)
   .content
     &-article
@@ -977,6 +1013,24 @@
     &-card
       &__title
         font-size: 15px
+  .comments
+    &-top
+      flex-wrap: wrap
+      &__wrapper
+        flex-basis: 100%
+        margin-bottom: 30px
+    &-form
+      &__container
+        justify-content: center
+      &__main
+        flex-direction: column
+        align-items: center
+      &__title
+        font-size: 17px
+      &__avatar
+        margin: 0 0 10px 0
+  .load-more
+    padding: 10px 0
 @media(max-width: 480px)
   .tabs
     background: linear-gradient(to bottom, #262D33 52%, #EDEFF0 48%)
@@ -1108,6 +1162,34 @@
     &-card
       &__title
         min-height: auto
+  .comments
+    &__reply-comment
+      padding-left: 40px
+    &-top
+      &__title, &__number
+        font-size: 24px
+        line-height: 30px
+    &-form
+      &__main
+        padding: 20px 10px
+      &__container
+        width: 100%
+      &__title
+        font-size: 14px
+      &__btn
+        width: 100%
+  .comment
+    &__top
+      flex-direction: column
+      align-items: flex-start
+    &__author
+      margin-right: 0
+      margin-bottom: 5px
+    &__img
+      width: 35px
+      height: 35px
+    &__text
+      font-size: 15px
 @media(max-width: 320px)
   .tabs
     background: linear-gradient(to bottom, #262D33 40%, #EDEFF0 60%)

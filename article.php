@@ -269,4 +269,147 @@
   <!-- /.container -->
 </section>
 <!-- /.article-cards -->
+<section class="comments">
+  <div class="container">
+    <div class="comments__wrapper">
+      <div class="comments__top comments-top">
+        <div class="comments-top__wrapper">
+          <h1 class="comments-top__title">Комментарии</h1>
+          <span class="comments-top__number">19</span>
+        </div>
+        <!-- /.comments-top__wrapper -->
+        <a href="#addComment" class="comments-top__link">
+          <img src="img/pencil.svg" alt="Иконка: Карандаш" class="comments-top__icon">
+          <span class="comments-top__text">Добавить комментарий</span>
+        </a>
+      </div>
+      <!-- /.comments__top comments-top -->
+      <div class="comments__comment comment">
+        <div class="comment__wrapper">
+          <img src="img/comment-1.png" alt="Фото: Комментатор" class="comment__img">
+          <div class="comment__main">
+            <div class="comment__top">
+              <span class="comment__author">Михаил Степашин</span>
+              <span class="comment__date">17 июля, 18:38</span>
+            </div>
+            <!-- /.comment__top -->
+            <p class="comment__text">
+              Хочу заметить, что автор этой статьи не написал, что не все могут получить статус самозанятого. Этот режим еще не ввели во всех регионах. Но если в вашем регионе есть, то поздравляю.
+            </p>
+            <div class="comment__actions">
+              <span class="comment__reply">Ответить</span>
+              <img src="img/like.svg" alt="Иконка: Нравится" class="comment__like">
+              <span class="comment__count-likes comment__count-likes--text-green">+10</span>
+              <img src="img/dislike.svg" alt="Иконка: Не нравится" class="comment__dislike">
+            </div>
+            <!-- /.comment__actions -->
+          </div>
+          <!-- /.comment__main -->
+        </div>
+        <!-- /.comment__wrapper -->
+      </div>
+      <!-- /.comments__comment comment -->
+      <div class="comments__comment comment comments__reply-comment">
+        <div class="comment__wrapper">
+          <img src="img/comment-2.png" alt="Фото: Комментатор" class="comment__img">
+          <div class="comment__main">
+            <div class="comment__top">
+              <span class="comment__author">Мира Стахова</span>
+              <span class="comment__date">17 июля, 18:41</span>
+            </div>
+            <!-- /.comment__top -->
+            <p class="comment__text">
+              Да, спасибо за замечание. Добавлю список регионов, где этот режим уже действует и буду периодически обновлять его. Потому что обещали ввести этот режим везде. 
+            </p>
+            <div class="comment__actions">
+              <span class="comment__reply">Ответить</span>
+              <img src="img/like.svg" alt="Иконка: Нравится" class="comment__like">
+              <span class="comment__count-likes">0</span>
+              <img src="img/dislike.svg" alt="Иконка: Не нравится" class="comment__dislike">
+            </div>
+            <!-- /.comment__actions -->
+          </div>
+          <!-- /.comment__main -->
+        </div>
+        <!-- /.comment__wrapper -->
+      </div>
+      <!-- /.comments__comment comment comments__reply-comment -->
+      <div class="comments__comment comment">
+        <div class="comment__wrapper">
+          <img src="img/comment-3.png" alt="Фото: Комментатор" class="comment__img">
+          <div class="comment__main">
+            <div class="comment__top">
+              <span class="comment__author">Анжела Иванова</span>
+              <span class="comment__date">17 июля, 18:53</span>
+            </div>
+            <!-- /.comment__top -->
+            <p class="comment__text comment__text--mb">
+              Если честно, кажется, что этот налоговый режим ввели, чтобы собрать больше денег с народа. Я, конечно, понимаю, что бюджеты надо пополнять, но не лучше ли обложить налогом богатых?
+            </p>
+            <div class="comment__actions">
+              <span class="comment__reply">Ответить</span>
+              <img src="img/like.svg" alt="Иконка: Нравится" class="comment__like">
+              <span class="comment__count-likes comment__count-likes--text-red">-3</span>
+              <img src="img/dislike.svg" alt="Иконка: Не нравится" class="comment__dislike">
+            </div>
+            <!-- /.comment__actions -->
+          </div>
+          <!-- /.comment__main -->
+        </div>
+        <!-- /.comment__wrapper -->
+      </div>
+      <!-- /.comments__comment comment -->
+      <div class="comments__comment comment">
+        <div class="comment__wrapper">
+          <img src="img/comment-4.png" alt="Фото: Комментатор" class="comment__img">
+          <div class="comment__main">
+            <div class="comment__top">
+              <span class="comment__author">Крис Яков</span>
+              <span class="comment__date">17 июля, 19:12</span>
+            </div>
+            <!-- /.comment__top -->
+            <p class="comment__text">
+              Такой режим уже давно работает в продвинутых странах, почему его ввели только сейчас, непонятно. Хотелось бы, чтобы это все заработало в моем регионе, буду в числе первых!
+            </p>
+            <div class="comment__actions">
+              <span class="comment__reply">Ответить</span>
+              <img src="img/like.svg" alt="Иконка: Нравится" class="comment__like">
+              <span class="comment__count-likes">0</span>
+              <img src="img/dislike.svg" alt="Иконка: Не нравится" class="comment__dislike">
+            </div>
+            <!-- /.comment__actions -->
+          </div>
+          <!-- /.comment__main -->
+        </div>
+        <!-- /.comment__wrapper -->
+      </div>
+      <!-- /.comments__comment comment -->
+      <button class="comments__load load-more">
+        <img src="img/loading.svg" alt="Иконка: Загрузка" class="load-more__icon">
+        <span class="load-more__text">загрузить еще</span>
+      </button>
+      <form id="addComment" action="send.php" class="comments__form comments-form">
+        <div class="comments-form__wrapper">
+          <div class="comments-form__main">
+            <img src="img/comment-form.png" alt="Аватар: Пользователь" class="comments-form__avatar">
+            <div class="comments-form__container">
+              <h3 class="comments-form__title">Что вы думаете на этот счет?</h3>
+              <textarea class="comments-form__textarea"></textarea>
+              <button type="submit" class="comments-form__btn">
+                Отправить
+                <img src="img/article-more-arrow.svg" alt="Стрелка: Отправить комментарий" class="comments-form__arrow">
+              </button>
+            </div>
+            <!-- /.comments-form__container -->
+          </div>
+          <!-- /.comments-form__main -->
+        </div>
+        <!-- /.comments-form__wrapper -->
+      </form>
+    </div>
+    <!-- /.comments__wrapper -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.comments -->
 <?php @include('modules/footer.php') ?>

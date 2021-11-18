@@ -1,0 +1,168 @@
+.comments
+  background-color: $light
+  &__wrapper
+    width: 750px
+    margin-left: 97px
+    padding-top: 90px
+    padding-bottom: 30px
+  &__top
+    margin-bottom: 29px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-top
+    &__wrapper
+      display: flex
+      align-items: center
+    &__title
+      margin: 0 10px 0 0
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+      color: $title-color
+    &__number
+      font-size: 40px
+      line-height: 50px
+      color: $grey-for-numbers
+    &__link
+      padding: 10px 20px
+      display: flex
+      align-items: center
+      color: $background-dark
+      border: 1px solid $line-color
+      border-radius: 20px
+      transition: all 300ms ease
+      &:hover
+        background-color: $blue
+        color: $light
+    &__icon
+      margin-right: 11px
+    &__text
+      font-family: 'Lato-Black'
+      font-size: 14px
+      line-height: 20px
+  &__reply-comment
+    padding-left: 90px
+  &__comment:last-of-type
+    margin-bottom: 1px
+  &__load
+    margin-bottom: 30px
+.comment
+  border-top: 1px solid $line-color
+  &__wrapper
+    padding: 20px 0 29px 0
+    display: flex
+  &__img
+    margin-right: 15px
+    width: 75px
+    height: 75px
+    object-fit: cover
+    border-radius: 50%
+  &__main
+    max-width: 570px
+  &__top
+    margin-bottom: 10px
+    display: flex
+    align-items: center
+  &__author
+    margin-right: 10px
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    color: $background-dark
+  &__date
+    font-size: 12px
+    line-height: 15px
+    color: $grey-for-numbers
+  &__text
+    margin: 0 0 15px 0
+    font-size: 18px
+    line-height: 30px
+    color: $grid-text
+    &--mb
+      margin-bottom: 45px
+  &__actions
+    display: flex
+    align-items: center
+  &__reply
+    margin-right: 15px
+    font-size: 12px
+    line-height: 15px
+    color: $background-dark
+    @include icon-before($image: "../img/material-comment.svg")
+  &__like
+    margin-right: 10px
+  &__count-likes
+    margin-right: 10px
+    font-size: 12px
+    line-height: 15px
+    color: $grey-for-numbers
+    &--text
+      &-green
+        color: $template-green
+      &-red
+        color: $template-red
+.load-more
+  width: 100%
+  padding: 15px 0 15px 0
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: $light
+  border: 1px solid $line-color
+  border-radius: 25px
+  cursor: pointer
+  color: $background-dark
+  transition: all 300ms ease
+  &:hover
+    background-color: $blue
+    color: $light
+  &__icon
+    margin-right: 7px
+  &__text
+    font-family: 'Lato-Black'
+    font-size: 14px
+    line-height: 20px
+.comments
+  &-form
+    width: 750px
+    &__wrapper
+      padding-top: 30px
+    &__main
+      padding: 30px 40px 35px 30px
+      display: flex
+      background: #F5F5F5
+      border-radius: 10px
+    &__title
+      margin: 0 0 15px 0
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: $background-dark
+    &__container
+      width: 595px
+      display: flex
+      flex-wrap: wrap
+    &__avatar
+      margin-top: 40px
+      // margin-right: 10px
+      margin-right: 23px
+      width: 75px
+      height: 75px
+      border-radius: 50%
+      object-fit: cover
+    &__textarea
+      padding: 10px
+      margin-bottom: 15px
+      width: 100%
+      height: 130px
+      resize: none
+    @include btn
+  &__load
+    padding-left: 26px
