@@ -143,7 +143,11 @@
         <h2 class="material-topic__name">Материал по теме</h2>
         <img src="img/material-topic.png" alt="Фото: Материал по теме" class="material-topic__img">
         <div class="material-topic__wrapper">
-          <h3 class="material-topic__title">20+ инструментов<br class="material-topic__br"> для js-разработчика</h3>
+          <a href="#" class="material-topic__link">
+            <h3 class="material-topic__title">
+              20+ инструментов<br class="material-topic__br"> для js-разработчика
+            </h3>
+          </a>
           <p class="material-topic__text">Узнайте, какими инструментами вы еще не пользовались, а могли бы. Эти инструменты помогут вам ускорить свою работу или повысить ее качество. Все инструменты собраны в виде...</p>
           <div class="material-topic__info">
             <span class="material-topic__watches">1,623</span>
@@ -208,4 +212,61 @@
   <!-- /.container -->
 </section>
 <!-- /.article-content article__content -->
+<section class="article-cards">
+  <div class="container">
+    <div class="article-cards__wrapper">
+      <div class="article-cards__card article-card">
+        <img src="img/article-card-1.png" alt="" class="article-card__img">
+        <a href="#" class="article-card__link">
+          <h3 class="article-card__title">Техника работы по помидоркам — это как?</h3>
+        </a>
+        <div class="article-card__info">
+          <span class="article-card__watches">1,904</span>
+          <span class="article-card__comments">82</span>
+        </div>
+        <!-- /.material-topic__info -->
+      </div>
+      <!-- /.article-cards__card article-card -->
+      <div class="article-cards__card article-card">
+        <img src="img/article-card-2.png" alt="" class="article-card__img">
+        <a href="#" class="article-card__link">
+          <h3 class="article-card__title">Вопросы на собеседовании для джуна</h3>
+        </a>
+        <div class="article-card__info">
+          <span class="article-card__watches">2,873</span>
+          <span class="article-card__comments">982</span>
+        </div>
+        <!-- /.material-topic__info -->
+      </div>
+      <!-- /.article-cards__card article-card -->
+      <div class="article-cards__card article-card">
+        <img src="img/article-card-3.png" alt="" class="article-card__img">
+        <a href="#" class="article-card__link">
+          <h3 class="article-card__title">Список стран, куда можно улететь</h3>
+        </a>
+        <div class="article-card__info">
+          <span class="article-card__watches">821</span>
+          <span class="article-card__comments">30</span>
+        </div>
+        <!-- /.material-topic__info -->
+      </div>
+      <!-- /.article-cards__card article-card -->
+      <div class="article-cards__card article-card">
+        <img src="img/article-card-4.png" alt="" class="article-card__img">
+        <a href="#" class="article-card__link">
+          <h3 class="article-card__title">В вашем портфолио могут быть фейковые работы</h3>
+        </a>
+        <div class="article-card__info">
+          <span class="article-card__watches">5,030</span>
+          <span class="article-card__comments">495</span>
+        </div>
+        <!-- /.material-topic__info -->
+      </div>
+      <!-- /.article-cards__card article-card -->
+    </div>
+    <!-- /.article-cards__wrapper -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.article-cards -->
 <?php @include('modules/footer.php') ?>

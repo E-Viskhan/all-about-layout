@@ -510,6 +510,9 @@
       width: 40%
     &__br
       display: none
+    &__title
+      &:hover
+        color: $background-dark
   .tags
     &__tag
       &:hover
@@ -519,6 +522,19 @@
     &__button
       &:hover
         background-color: $blue
+  .article
+    &-cards
+      &__card
+        margin-bottom: 30px
+        max-width: none
+        width: 48%
+    &-card
+      &__img
+        width: 100%
+      &__title
+        min-height: 50px
+        &:hover
+          color: $title-color
 @media(max-width: 768px)
   .container
     width: 92%
@@ -957,6 +973,10 @@
       height: 200px
     &__wrapper
       flex-basis: 100%
+  .article
+    &-card
+      &__title
+        font-size: 15px
 @media(max-width: 480px)
   .tabs
     background: linear-gradient(to bottom, #262D33 52%, #EDEFF0 48%)
@@ -1062,7 +1082,12 @@
     &-content
       &__strong-text
         font-size: 16px
+  .tags
+    &__tag
+      margin-right: 7px
   .repost-help
+    &__title
+      text-align: center
     &__wrapper
       display: flex
       flex-direction: column
@@ -1072,6 +1097,17 @@
       justify-content: center
       &:not(:last-child)
         margin-bottom: 15px
+  .article
+    &-content
+      padding-bottom: 30px
+    &-cards
+      &__wrapper
+        justify-content: center
+      &__card
+        width: 85%
+    &-card
+      &__title
+        min-height: auto
 @media(max-width: 320px)
   .tabs
     background: linear-gradient(to bottom, #262D33 40%, #EDEFF0 60%)
@@ -1086,3 +1122,6 @@
         height: 180px
       &__nav
         top: 24%
+    &-cards
+      &__card
+        width: 100%

@@ -96,3 +96,15 @@
     fill: $template-red
   &:hover
     transform: scale(1.3)
+@mixin watches-and-comments
+  &__info
+    display: flex
+    align-items: center
+    font-size: 12px
+    line-height: 15px
+    color: $grey-for-numbers
+  &__watches
+    @include icon-before($image: '../img/eye.svg')
+    margin-right: 10px
+  &__comments
+    @include icon-before($image: '../img/material-comment.svg')
