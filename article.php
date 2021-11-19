@@ -1,5 +1,5 @@
 <?php @include('modules/header.php') ?>
-<section class="article-main article__main">  
+<section class="article-main">  
   <div class="container">
     <div class="article-main__wrapper">
       <svg
@@ -22,16 +22,16 @@
             <a href="index.php" class="article-nav__link article-nav__index">На главную</a>
           </li>
           <li class="article-nav__item">
-            <a href="#" class="article-nav__link article-nav__back">Назад</a>
+            <a href="article-prev.php" class="article-nav__link article-nav__back">Назад</a>
           </li>
           <li class="article-nav__item">
-            <a href="#" class="article-nav__link article-nav__forward">Вперед</a>
+            <a href="article-next.php" class="article-nav__link article-nav__forward">Вперед</a>
           </li>
         </ul>
       </div>
       <!-- /.article-main__top -->
-      <h1 class="article-top__title">Новый налоговый режим<br class="article-main__br"> для фрилансеров — налог<br class="article-main__br"> на проф. доход</h1>
-      <p class="article-top__text">Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.</p>
+      <h1 class="article-main__title">Новый налоговый режим<br class="article-main__br"> для фрилансеров — налог<br class="article-main__br"> на проф. доход</h1>
+      <p class="article-main__text">Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.</p>
       <div class="article-main__info">
         <span class="article-main__date">6 августа, 10:30</span>
         <span class="article-main__likes">830</span>
@@ -40,7 +40,7 @@
       <!-- /.article-main__info -->
       <div class="article-main__author article-author">
         <div class="article-author__wrapper">
-          <img src="img/article-author__img.png" alt="Фото: Автор статьи" class="article-author__img">
+          <img src="img/article-author__img.jpg" alt="Фото: Автор статьи" class="article-author__img">
           <div class="article-author__info">
             <span class="article-author__name">Мира Стахова</span>
             <span class="article-author__work">Фрилансер</span>
@@ -58,10 +58,10 @@
   <!-- /.container -->
 </section>
 <!-- /.article-main -->
-<section class="article-content article__content">
+<section class="article-content">
   <div class="container">
     <div class="article-content__container">
-      <p class="article-content__first-text">
+      <p class="article-content__first-text" id="articles">
         МИдейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития.<br>
         Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
       </p>
@@ -78,7 +78,7 @@
     </div>
     <!-- /.article-content__container -->
     <!-- Slider main container -->
-    <div class="swiper article-content__slider article-slider">
+    <div class="swiper article-content__slider article-slider" id="news">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="article-slider__item">
@@ -106,7 +106,7 @@
             <div class="article-slider__info">
               <p class="article-slider__text">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.</p>
               <div class="article-slider__author">
-                <img src="img/article-slider-author-img-2.png" alt="Фото: Автор фотографии" class="article-slider__author-img">
+                <img src="img/article-slider-author-img-2.jpg" alt="Фото: Автор фотографии" class="article-slider__author-img">
                 <div class="article-slider__author-info">
                   <span class="article-slider__author-name">Сергей Андреев</span>
                   <span class="article-slider__author-work">Фотограф</span>
@@ -139,7 +139,7 @@
         </p>
       </div>
       <!-- /.article-content__container -->
-      <div class="article-content__material material-topic">
+      <div class="article-content__material material-topic" id="hot">
         <h2 class="material-topic__name">Материал по теме</h2>
         <img src="img/material-topic.png" alt="Фото: Материал по теме" class="material-topic__img">
         <div class="material-topic__wrapper">
@@ -384,17 +384,95 @@
         <!-- /.comment__wrapper -->
       </div>
       <!-- /.comments__comment comment -->
-      <button class="comments__load load-more">
+      <div class="comments__comment comment comment--hidden">
+        <div class="comment__wrapper">
+          <img src="img/comment-1.png" alt="Фото: Комментатор" class="comment__img">
+          <div class="comment__main">
+            <div class="comment__top">
+              <span class="comment__author">Мирон Федоров</span>
+              <span class="comment__date">18 июля, 11:12</span>
+            </div>
+            <!-- /.comment__top -->
+            <p class="comment__text">
+              Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Безорфографичный образ переписали щеке однажды своего но живет сбить текстами.
+            </p>
+            <div class="comment__actions">
+              <span class="comment__reply">Ответить</span>
+              <img src="img/like.svg" alt="Иконка: Нравится" class="comment__like">
+              <span class="comment__count-likes">0</span>
+              <img src="img/dislike.svg" alt="Иконка: Не нравится" class="comment__dislike">
+            </div>
+            <!-- /.comment__actions -->
+          </div>
+          <!-- /.comment__main -->
+        </div>
+        <!-- /.comment__wrapper -->
+      </div>
+      <!-- /.comments__comment comment -->
+      <div class="comments__comment comment comment--hidden">
+        <div class="comment__wrapper">
+          <img src="img/comment-4.png" alt="Фото: Комментатор" class="comment__img">
+          <div class="comment__main">
+            <div class="comment__top">
+              <span class="comment__author">Муса Гучигов</span>
+              <span class="comment__date">18 июля, 13:12</span>
+            </div>
+            <!-- /.comment__top -->
+            <p class="comment__text">
+              Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Безорфографичный взгляд снова точках буквенных даже.
+            </p>
+            <div class="comment__actions">
+              <span class="comment__reply">Ответить</span>
+              <img src="img/like.svg" alt="Иконка: Нравится" class="comment__like">
+              <span class="comment__count-likes">0</span>
+              <img src="img/dislike.svg" alt="Иконка: Не нравится" class="comment__dislike">
+            </div>
+            <!-- /.comment__actions -->
+          </div>
+          <!-- /.comment__main -->
+        </div>
+        <!-- /.comment__wrapper -->
+      </div>
+      <!-- /.comments__comment comment -->
+      <div class="comments__comment comment comment--hidden">
+        <div class="comment__wrapper">
+          <img src="img/comment-4.png" alt="Фото: Комментатор" class="comment__img">
+          <div class="comment__main">
+            <div class="comment__top">
+              <span class="comment__author">Муса Гучигов</span>
+              <span class="comment__date">18 июля, 16:12</span>
+            </div>
+            <!-- /.comment__top -->
+            <p class="comment__text">
+              Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Предупредила лучше прямо встретил до ведущими!
+            </p>
+            <div class="comment__actions">
+              <span class="comment__reply">Ответить</span>
+              <img src="img/like.svg" alt="Иконка: Нравится" class="comment__like">
+              <span class="comment__count-likes">0</span>
+              <img src="img/dislike.svg" alt="Иконка: Не нравится" class="comment__dislike">
+            </div>
+            <!-- /.comment__actions -->
+          </div>
+          <!-- /.comment__main -->
+        </div>
+        <!-- /.comment__wrapper -->
+      </div>
+      <!-- /.comments__comment comment -->
+      <button id="load-more" class="comments__load load-more">
         <img src="img/loading.svg" alt="Иконка: Загрузка" class="load-more__icon">
         <span class="load-more__text">загрузить еще</span>
       </button>
-      <form id="addComment" action="send.php" class="comments__form comments-form">
+      <form id="addComment" action="send.php" class="comments__form comments-form" method="POST">
         <div class="comments-form__wrapper">
           <div class="comments-form__main">
             <img src="img/comment-form.png" alt="Аватар: Пользователь" class="comments-form__avatar">
             <div class="comments-form__container">
               <h3 class="comments-form__title">Что вы думаете на этот счет?</h3>
-              <textarea class="comments-form__textarea"></textarea>
+              <div class="comments-form__textarea-container">
+                <textarea name="comment" class="comments-form__textarea" required></textarea>
+              </div>
+              <!-- /.comments-form__textarea-container -->
               <button type="submit" class="comments-form__btn">
                 Отправить
                 <img src="img/article-more-arrow.svg" alt="Стрелка: Отправить комментарий" class="comments-form__arrow">

@@ -5,21 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Universal</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <style></style>
+    <link rel="stylesheet" href="css/critical.min.css">
+    <link rel="preload" as="style" href="css/style.css" onload="this.rel='stylesheet'">
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <header class="header header--mobile-fixed" id="header">
+    <header class="header header-main header--mobile-fixed" id="header">
       <div class="container">
         <div class="header-wrapper">
           <a href="index.php" class="header-link">

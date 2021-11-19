@@ -40,6 +40,31 @@ $(function () {
   dotNums.forEach(removeText);
   // Конец кода слайдера
 
+  // Начало кода для изменении хедера в зависимости от открытого адреса
+  var windowPath = window.location.pathname;
+  var header = $('#header');
+  var headerLogo = $('#header-logo');
+  var headerNavLink = $('.header-nav__link');
+  var headerBurgerLine = $('.header-burger__line');
+  if (windowPath == "/" || windowPath == "/universal/" || windowPath == "/index.php" || windowPath == "/universal/index.php") {
+  }
+  else {
+    header.removeClass('header-main')
+    header.addClass('header-article')
+    headerLogo.attr('src', 'img/header-logo-other-pages.svg')
+    headerNavLink.each(function () {
+      $(this).addClass('header-nav__link--grey')
+    });
+    headerBurgerLine.each(function () {
+      $(this).addClass('header-burger__line--black')
+    });
+    var footerLink = $('[data-link=change]');
+    $(footerLink).removeAttr('data-toggle');
+    footerLink.text('Партнерство')
+  }
+
+  // Конец кода для изменения хедера
+
   // Начало кода модального окна
   var modalOpenBtn = $('[data-toggle=modal]')
   var modalCloseBtn = $('.modal__close')
@@ -110,28 +135,6 @@ $(function () {
   });
   // Конец кода для валидации формы подписки в футере
 
-  // Начало кода для изменении хедера в зависимости от открытого адреса
-  var windowPath = window.location.pathname;
-  var header = $('#header');
-  var headerLogo = $('#header-logo');
-  var headerNavLink = $('.header-nav__link');
-  var headerBurgerLine = $('.header-burger__line');
-  if (windowPath == "/" || windowPath == "/universal/" || windowPath == "/index.php" || windowPath == "/universal/index.php") {
-    header.addClass('header-main')
-  }
-  else {
-    header.addClass('header-article')
-    headerLogo.attr('src', 'img/header-logo-other-pages.svg')
-    headerNavLink.each(function () {
-      $(this).addClass('header-nav__link--grey')
-    });
-    headerBurgerLine.each(function () {
-      $(this).addClass('header-burger__line--black')
-    });
-  }
-
-  // Конец кода для изменения хедера
-
   // Начало кода для стрелки вверх
   const offset = 100;
   const scrollUp = document.querySelector('.scroll-up');
@@ -178,6 +181,10 @@ $(function () {
   const swiper = new Swiper('.swiper', {
     loop: true,
     slidesPerView: 'auto',
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
     // Стрелки навигации
     navigation: {
       nextEl: '.article-slider__next',
@@ -185,6 +192,28 @@ $(function () {
     },
   });
 
+  // Загрузка дополнительных комментов по нажатию
+  var loadMore = $('#load-more');
+  loadMore.on('click', () => {
+    var hiddenComments = $('.comment--hidden').toArray();
+    hiddenComments.forEach(function (item) {
+      item.classList.remove('comment--hidden');
+    });
+  });
+  // Валидация формы добавления комментария
+  $('#addComment').validate({
+    "messages": {
+      "comment": {
+        required: "Пожалуйста, введите комментарий",
+        minlength: "Пожалуйста, введите не менее 100 символов"
+      },
+    },
+    rules: {
+      "comment": {
+        minlength: 100
+      },
+    },
+  });
 
   // Плавная прокрутка по якорным ссылкам
   var $page = $('html, body');

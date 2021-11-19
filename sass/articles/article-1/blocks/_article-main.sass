@@ -1,8 +1,13 @@
 .article
   &-main
+    position: relative
     background-image: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url('../img/article-page__main-img.jpg')
     background-repeat: no-repeat
     background-size: cover
+    &--next
+      background-image: linear-gradient(0deg, rgba(38,45,51,0.75), rgba(38,45,51,0.75)),url("../img/slider-img-1.png");
+    &--prev
+      background-image: linear-gradient(0deg, rgba(38,45,51,0.75), rgba(38,45,51,0.75)),url("../img/slider-img-2.jpg");
     &__wrapper
       padding: 60px 97px 72px 97px
       position: relative
@@ -57,8 +62,23 @@
       bottom: -197px
       right: 97px
       z-index: 2
-  &__main
-    position: relative
+    &__title
+      margin: 0 0 30px 0
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 55px
+      line-height: 70px
+      color: $light
+    &__text
+      margin-bottom: 43px
+      max-width: 632px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 30px
+      color: $light
+      opacity: 0.85
   &-nav
     font-style: normal
     font-size: 14px
@@ -89,24 +109,6 @@
         transform: translateY(-50%) rotate(180deg)
     &__link
       color: $light
-  &-top
-    &__title
-      margin: 0 0 30px 0
-      font-family: Roboto Slab
-      font-style: normal
-      font-weight: bold
-      font-size: 55px
-      line-height: 70px
-      color: $light
-    &__text
-      margin-bottom: 43px
-      max-width: 632px
-      font-style: normal
-      font-weight: normal
-      font-size: 18px
-      line-height: 30px
-      color: $light
-      opacity: 0.85
   &-author
     min-width: 263px
     background: $light

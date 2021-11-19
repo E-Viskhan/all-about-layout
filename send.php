@@ -10,6 +10,7 @@ require 'phpmailer/Exception.php';
 $topic = $_POST['topic'];
 $message = $_POST['message'];
 $email = $_POST['email'];
+$comment = $_POST['comment'];
 if (!empty($topic)) {
     $title = "Обратная связь с сайта Universal";
     $body = "
@@ -17,13 +18,19 @@ if (!empty($topic)) {
     <b>Email:</b> $email<br><br>
     <b>Message:</b><br>$message
     ";
+} elseif (!empty($comment)) {
+    $title = "Новый комментарий на сайте Universal";
+    $body = "
+    <h2>Новый комментарий!</h2>
+    <b>Текст комментария:</b><br>$comment
+    ";
 } else {
     $emailNewsletter = $_POST['emailNewsletter'];
-    $title = "New Subscriber for You";
+    $title = "У вас новый подписчик на сайте Universal!";
     $body = "
-    <h2>New Subscriber!</h2>
-    <strong>His Email: </strong> $emailNewsletter<br><br>
-    <strong>Congratulations!!!</strong>
+    <h2>Новый подписчик!</h2>
+    <strong>Его почта: </strong> $emailNewsletter<br><br>
+    <strong>Поздравляем!!!</strong>
     ";
 }
 

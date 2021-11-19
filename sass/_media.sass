@@ -447,7 +447,6 @@
         display: none
       &__author
         bottom: -50px
-    &-top
       &__title
         font-size: 40px
         line-height: 50px
@@ -784,7 +783,6 @@
         padding: 50px 50px 60px 50px
       &__favorite
         top: 132px
-    &-top
       &__title
         font-size: 30px
         line-height: 45px
@@ -967,7 +965,15 @@
       font-size: 16px
   .article
     &-main
+      &__title
+        margin-bottom: 20px
+        font-size: 25px
+        line-height: 35px
+      &__text
+        font-size: 16px
+        line-height: 25px
       &__top
+        flex-wrap: wrap
         margin-bottom: 30px
       &__topic
         margin-bottom: 30px
@@ -980,15 +986,6 @@
         bottom: -105px
         right: 50%
         transform: translateX(50%)
-    &-top
-      flex-wrap: wrap
-      &__title
-        margin-bottom: 20px
-        font-size: 25px
-        line-height: 35px
-      &__text
-        font-size: 16px
-        line-height: 25px
     &-content
       padding-top: 130px
       &__wrapper
@@ -1031,6 +1028,9 @@
         margin: 0 0 10px 0
   .load-more
     padding: 10px 0
+  .scroll-up
+    width: 30px
+    height: 30px
 @media(max-width: 480px)
   .tabs
     background: linear-gradient(to bottom, #262D33 52%, #EDEFF0 48%)
@@ -1100,7 +1100,6 @@
       &__favorite
         top: 152px
         width: 15px
-    &-top
       &__title
         font-size: 20px
         line-height: 28px

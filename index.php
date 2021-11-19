@@ -279,7 +279,7 @@
               25 способов настроить&nbsp;слайдер
             </h2>
             <img
-              src="img/four-articles__img-1.png"
+              src="img/four-articles__img-1.jpg"
               alt="Картинка из блока с 4-мя статьями"
               class="four-articles__img"
             />
@@ -287,7 +287,7 @@
           <a class="four-articles__article" href="article.php">
             <h2 class="four-articles__title">Главные фишки фрилансера</h2>
             <img
-              src="img/four-articles__img-2.png"
+              src="img/four-articles__img-2.jpg"
               alt="Картинка из блока с 4-мя статьями"
               class="four-articles__img"
             />
@@ -297,7 +297,7 @@
               Техника управлеия временем “Помодоро”
             </h2>
             <img
-              src="img/four-articles__img-3.png"
+              src="img/four-articles__img-3.jpg"
               alt="Картинка из блока с 4-мя статьями"
               class="four-articles__img"
             />
@@ -305,7 +305,7 @@
           <a class="four-articles__article" href="article.php">
             <h2 class="four-articles__title">Что нужно знать о Git и GitHub</h2>
             <img
-              src="img/four-articles__img-4.png"
+              src="img/four-articles__img-4.jpg"
               alt="Картинка из блока с 4-мя статьями"
               class="four-articles__img"
             />
@@ -337,7 +337,7 @@
                 </div>
                 <!-- /.grid-main__left -->
                 <img
-                  src="img/grid-main__img.png"
+                  src="img/grid-main__img.jpg"
                   alt="Фото: Машина"
                   class="grid-main__img"
                 />
@@ -450,7 +450,7 @@
             <a href="article.php" class="grid-tools__link">
               <div class="grid-tools__wrapper">
                 <img
-                  src="img/notebook.png"
+                  src="img/notebook.jpg"
                   alt="Фото: Ноутбук"
                   class="grid-tools__img"
                 />
@@ -583,7 +583,7 @@
         <div class="broad-articles__article broad-article">
           <div class="broad-article__wrapper">
             <img
-              src="img/broad-article-img-1.png"
+              src="img/broad-article-img-1.jpg"
               alt="Фото рабочего места"
               class="broad-article__img"
             />
@@ -627,7 +627,7 @@
         <div class="broad-articles__article broad-article">
           <div class="broad-article__wrapper">
             <img
-              src="img/broad-article-img-2.png"
+              src="img/broad-article-img-2.jpg"
               alt="Фото: Парень работает за компьютером"
               class="broad-article__img"
             />
@@ -672,7 +672,7 @@
         <div class="broad-articles__article broad-article">
           <div class="broad-article__wrapper">
             <img
-              src="img/broad-article-img-3.png"
+              src="img/broad-article-img-3.jpg"
               alt="Фото: Рабочее место"
               class="broad-article__img"
             />
@@ -716,7 +716,7 @@
         <div class="broad-articles__article broad-article">
           <div class="broad-article__wrapper">
             <img
-              src="img/broad-article-img-4.png"
+              src="img/broad-article-img-4.jpg"
               alt="Фото: Ноутбук и книги на столе"
               class="broad-article__img"
             />
@@ -760,7 +760,7 @@
         <div class="broad-articles__article broad-article">
           <div class="broad-article__wrapper">
             <img
-              src="img/broad-article-img-5.png"
+              src="img/broad-article-img-5.jpg"
               alt="Фото: Водопад"
               class="broad-article__img"
             />
@@ -803,7 +803,7 @@
         <div class="broad-articles__article broad-article">
           <div class="broad-article__wrapper">
             <img
-              src="img/broad-article-img-6.png"
+              src="img/broad-article-img-6.jpg"
               alt="Фото: Вкладка с открытым ютубом"
               class="broad-article__img"
             />
@@ -856,7 +856,7 @@
             "
           >
             <img
-              src="img/recently-article__img-1.png"
+              src="img/recently-article__img-1.jpg"
               alt="Фото: Работа за ноутом"
               class="recently-article__img"
             />
@@ -879,7 +879,7 @@
             "
           >
             <img
-              src="img/broad-article-img-1.png"
+              src="img/broad-article-img-1.jpg"
               alt="Фото: Рабочее место"
               class="recently-article__img"
             />
@@ -901,7 +901,7 @@
             "
           >
             <img
-              src="img/recently-article__img-3.png"
+              src="img/recently-article__img-3.jpg"
               alt="Фото: Работа в гугл"
               class="recently-article__img"
             />
@@ -923,7 +923,7 @@
             "
           >
             <img
-              src="img/recently-article__img-4.png"
+              src="img/recently-article__img-4.jpg"
               alt="Фото: Нью-йорк"
               class="recently-article__img"
             />
@@ -945,7 +945,7 @@
             "
           >
             <img
-              src="img/recently-article__img-5.png"
+              src="img/recently-article__img-5.jpg"
               alt="Фото: Ноутбук"
               class="recently-article__img"
             />
@@ -967,7 +967,7 @@
             "
           >
             <img
-              src="img/recently-article__img-6.png"
+              src="img/recently-article__img-6.jpg"
               alt="Фото: Аккуратное рабочее место"
               class="recently-article__img"
             />
@@ -989,7 +989,7 @@
             "
           >
             <img
-              src="img/recently-article__img-7.png"
+              src="img/recently-article__img-7.jpg"
               alt="Фото: Аккуратное рабочее место"
               class="recently-article__img"
             />

@@ -139,7 +139,7 @@
                     <a href="#" class="footer-main-nav__link">Реклама</a>
                   </li>
                   <li class="footer-main-nav__item">
-                    <a href="#" class="footer-main-nav__link" data-toggle=modal>Обратная связь</a>
+                    <a href="#" class="footer-main-nav__link" data-toggle=modal data-link=change>Обратная связь</a>
                   </li>
                 </ul>
               </div>
@@ -256,11 +256,11 @@
       </svg>
     </div>
     <!-- /.scroll-up -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=smoothscroll"></script>
+    <script defer src="https://polyfill.io/v3/polyfill.min.js?features=smoothscroll"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script defer src="js/jquery.validate.min.js"></script>
+    <script defer src="js/slick.min.js"></script>
+    <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
