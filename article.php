@@ -1,4 +1,4 @@
-<?php @include('modules/header.php') ?>
+<?php @include('article-modules/header.php') ?>
 <section class="article-main">  
   <div class="container">
     <div class="article-main__wrapper">
@@ -490,4 +490,4 @@
   <!-- /.container -->
 </section>
 <!-- /.comments -->
-<?php @include('modules/footer.php') ?>
+<?php @include('article-modules/footer.php') ?>
